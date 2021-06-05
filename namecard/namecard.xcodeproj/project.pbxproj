@@ -13,6 +13,7 @@
 		047E270A266A728D00ED10B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047E2708266A728D00ED10B7 /* Main.storyboard */; };
 		047E270C266A729100ED10B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047E270B266A729100ED10B7 /* Assets.xcassets */; };
 		047E270F266A729100ED10B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047E270D266A729100ED10B7 /* LaunchScreen.storyboard */; };
+		04D0BDC8266C0BAE003A22DB /* mycardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0BDC7266C0BAE003A22DB /* mycardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		047E270B266A729100ED10B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047E270E266A729100ED10B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047E2710266A729100ED10B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D0BDC7266C0BAE003A22DB /* mycardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mycardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				047E2702266A728D00ED10B7 /* AppDelegate.swift */,
 				047E2704266A728D00ED10B7 /* SceneDelegate.swift */,
 				047E2706266A728D00ED10B7 /* ViewController.swift */,
+				04D0BDC7266C0BAE003A22DB /* mycardTableViewCell.swift */,
 				047E2708266A728D00ED10B7 /* Main.storyboard */,
 				047E270B266A729100ED10B7 /* Assets.xcassets */,
 				047E270D266A729100ED10B7 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				047E2707266A728D00ED10B7 /* ViewController.swift in Sources */,
 				047E2703266A728D00ED10B7 /* AppDelegate.swift in Sources */,
 				047E2705266A728D00ED10B7 /* SceneDelegate.swift in Sources */,
+				04D0BDC8266C0BAE003A22DB /* mycardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
