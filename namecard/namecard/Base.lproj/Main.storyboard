@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--名片-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="namecard" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,14 +27,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="302"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="科技公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egX-S6-eD5">
-                                                    <rect key="frame" x="10" y="10" width="70" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egX-S6-eD5">
+                                                    <rect key="frame" x="10" y="10" width="0.0" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIO-rP-OQp">
-                                                    <rect key="frame" x="10" y="41" width="394" height="251"/>
+                                                    <rect key="frame" x="10" y="20" width="394" height="272"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQa-2x-5z6">
                                                             <rect key="frame" x="16" y="22" width="42" height="21"/>
@@ -74,11 +74,14 @@
                             <constraint firstItem="gYi-ZX-har" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jyL-dB-SWl"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="hVK-Nm-kcU"/>
+                    <tabBarItem key="tabBarItem" title="名片" id="hVK-Nm-kcU"/>
+                    <connections>
+                        <outlet property="tableView" destination="gYi-ZX-har" id="ak8-lH-kdM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293" y="-313"/>
+            <point key="canvasLocation" x="235" y="-431"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4kj-pn-O0I">
@@ -98,21 +101,74 @@
             </objects>
             <point key="canvasLocation" x="-942" y="7"/>
         </scene>
-        <!--Item-->
+        <!--人脈-->
         <scene sceneID="dag-YJ-xke">
             <objects>
-                <viewController id="dJ5-kQ-wAn" sceneMemberID="viewController">
+                <viewController title="人脈" interfaceStyle="light" id="dJ5-kQ-wAn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vMl-3r-8Dl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bua-Bv-qv9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="othernamecard" rowHeight="316" id="Sdg-bd-bpZ">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="316"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sdg-bd-bpZ" id="vwa-IW-J1Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="316"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="科技公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5v-IW-Xau">
+                                                    <rect key="frame" x="30" y="30" width="70" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oV1-mI-ZEq">
+                                                    <rect key="frame" x="0.0" y="71" width="414" height="245"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oMa-CO-4J6">
+                                                            <rect key="frame" x="30" y="0.0" width="150" height="150"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="oMa-CO-4J6" secondAttribute="bottom" constant="59" id="533-nr-VP7"/>
+                                                        <constraint firstItem="oMa-CO-4J6" firstAttribute="top" secondItem="oV1-mI-ZEq" secondAttribute="top" id="cc0-EL-OpK"/>
+                                                        <constraint firstItem="oMa-CO-4J6" firstAttribute="leading" secondItem="oV1-mI-ZEq" secondAttribute="leading" constant="30" id="lZh-YJ-dUC"/>
+                                                        <constraint firstAttribute="trailing" secondItem="oMa-CO-4J6" secondAttribute="trailing" constant="87" id="pIJ-sa-gL6"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="oV1-mI-ZEq" secondAttribute="trailing" id="6av-RC-cij"/>
+                                                <constraint firstItem="oV1-mI-ZEq" firstAttribute="leading" secondItem="vwa-IW-J1Q" secondAttribute="leading" id="Gia-rt-WpH"/>
+                                                <constraint firstItem="v5v-IW-Xau" firstAttribute="leading" secondItem="vwa-IW-J1Q" secondAttribute="leading" constant="30" id="QLK-Fq-duI"/>
+                                                <constraint firstAttribute="bottom" secondItem="oV1-mI-ZEq" secondAttribute="bottom" id="Vnc-qr-sBb"/>
+                                                <constraint firstItem="oV1-mI-ZEq" firstAttribute="top" secondItem="v5v-IW-Xau" secondAttribute="bottom" constant="20" id="do6-3c-uE7"/>
+                                                <constraint firstItem="v5v-IW-Xau" firstAttribute="top" secondItem="vwa-IW-J1Q" secondAttribute="top" constant="30" id="fs8-ZM-qzW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Yfs-y3-Pax"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bua-Bv-qv9" firstAttribute="top" secondItem="Yfs-y3-Pax" secondAttribute="top" id="0Ch-Vt-sXo"/>
+                            <constraint firstItem="Yfs-y3-Pax" firstAttribute="trailing" secondItem="bua-Bv-qv9" secondAttribute="trailing" id="3oP-ch-JgW"/>
+                            <constraint firstItem="Yfs-y3-Pax" firstAttribute="bottom" secondItem="bua-Bv-qv9" secondAttribute="bottom" id="5f4-eu-owf"/>
+                            <constraint firstItem="bua-Bv-qv9" firstAttribute="leading" secondItem="Yfs-y3-Pax" secondAttribute="leading" id="erQ-FN-nee"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="EQf-fO-YNB"/>
+                    <tabBarItem key="tabBarItem" title="人脈" id="EQf-fO-YNB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfe-ec-h2T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293" y="399"/>
+            <point key="canvasLocation" x="235" y="394"/>
         </scene>
     </scenes>
     <resources>
