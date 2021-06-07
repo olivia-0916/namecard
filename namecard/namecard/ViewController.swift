@@ -10,13 +10,13 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     
-    var namecard = [Namecard]()
+    var namecards = [Namecard]()
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //fetchData()
+        fetchData()
         tableView.delegate = self
         tableView.dataSource = self
 
@@ -26,21 +26,40 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return namecard.count
+        return namecards.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "othercardTableViewCell", for: indexPath) as?othercardTableViewCell
+        let namecard = namecards[indexPath.row]
+        cell?.namelabel.text = namecard.Name
+        cell?.joblabel.text = namecard.Job
+        return cell!
         
-        
-        
+    
     }
+    
+}
+extension ViewController {
+private func fetchData() {
+    guard let path = Bundle.main.path(forResource: "namecardContent", ofType: "plist"),
+          let xml = FileManager.default.contents(atPath: path),
+          let namecards = try? PropertyListDecoder().decode([Namecard].self, from: xml) else {
+        return
+    }
+    self.namecards = namecards
+    tableView.reloadData()
+}
+
+}
+
     
 
 
 
-}
+
 
