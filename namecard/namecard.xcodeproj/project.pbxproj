@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		047AD68F266E4664004410FE /* namecardContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047AD68E266E4664004410FE /* namecardContent.plist */; };
 		047AD692266E4AC3004410FE /* Namecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047AD691266E4AC3004410FE /* Namecard.swift */; };
+		047AD696266E5274004410FE /* othercardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047AD695266E5274004410FE /* othercardTableViewCell.swift */; };
 		047E2703266A728D00ED10B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E2702266A728D00ED10B7 /* AppDelegate.swift */; };
 		047E2705266A728D00ED10B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E2704266A728D00ED10B7 /* SceneDelegate.swift */; };
 		047E2707266A728D00ED10B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E2706266A728D00ED10B7 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		047AD68E266E4664004410FE /* namecardContent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = namecardContent.plist; sourceTree = "<group>"; };
 		047AD691266E4AC3004410FE /* Namecard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namecard.swift; sourceTree = "<group>"; };
+		047AD695266E5274004410FE /* othercardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = othercardTableViewCell.swift; sourceTree = "<group>"; };
 		047E26FF266A728D00ED10B7 /* namecard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = namecard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047E2702266A728D00ED10B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		047E2704266A728D00ED10B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				047E2704266A728D00ED10B7 /* SceneDelegate.swift */,
 				047E2706266A728D00ED10B7 /* ViewController.swift */,
 				04D0BDC7266C0BAE003A22DB /* mycardTableViewCell.swift */,
+				047AD695266E5274004410FE /* othercardTableViewCell.swift */,
 				047AD691266E4AC3004410FE /* Namecard.swift */,
 				047E2708266A728D00ED10B7 /* Main.storyboard */,
 				047E270B266A729100ED10B7 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 			files = (
 				047E2707266A728D00ED10B7 /* ViewController.swift in Sources */,
 				047AD692266E4AC3004410FE /* Namecard.swift in Sources */,
+				047AD696266E5274004410FE /* othercardTableViewCell.swift in Sources */,
 				047E2703266A728D00ED10B7 /* AppDelegate.swift in Sources */,
 				047E2705266A728D00ED10B7 /* SceneDelegate.swift in Sources */,
 				04D0BDC8266C0BAE003A22DB /* mycardTableViewCell.swift in Sources */,
