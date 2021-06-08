@@ -48,9 +48,7 @@ private func fetchData() {
           let xml = FileManager.default.contents(atPath: path),
           let namecards = try? PropertyListDecoder().decode([Namecard].self, from: xml) else {
         return
-    }
-    self.namecards = namecards
-    tableView.reloadData()
 }
 
+}
 }

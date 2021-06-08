@@ -11,6 +11,8 @@
 		047AD692266E4AC3004410FE /* Namecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047AD691266E4AC3004410FE /* Namecard.swift */; };
 		047AD696266E5274004410FE /* othercardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047AD695266E5274004410FE /* othercardTableViewCell.swift */; };
 		047AD6A0266FAE35004410FE /* othernamecardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047AD69F266FAE35004410FE /* othernamecardViewController.swift */; };
+		047AD6A4266FC3D8004410FE /* 人脈.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047AD6A3266FC3D8004410FE /* 人脈.storyboard */; };
+		047AD6A7266FC5F3004410FE /* 我的名片.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047AD6A6266FC5F3004410FE /* 我的名片.storyboard */; };
 		047E2703266A728D00ED10B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E2702266A728D00ED10B7 /* AppDelegate.swift */; };
 		047E2705266A728D00ED10B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E2704266A728D00ED10B7 /* SceneDelegate.swift */; };
 		047E2707266A728D00ED10B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E2706266A728D00ED10B7 /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 		047AD691266E4AC3004410FE /* Namecard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namecard.swift; sourceTree = "<group>"; };
 		047AD695266E5274004410FE /* othercardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = othercardTableViewCell.swift; sourceTree = "<group>"; };
 		047AD69F266FAE35004410FE /* othernamecardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = othernamecardViewController.swift; sourceTree = "<group>"; };
+		047AD6A3266FC3D8004410FE /* 人脈.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "人脈.storyboard"; sourceTree = "<group>"; };
+		047AD6A6266FC5F3004410FE /* 我的名片.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "我的名片.storyboard"; sourceTree = "<group>"; };
 		047E26FF266A728D00ED10B7 /* namecard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = namecard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047E2702266A728D00ED10B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		047E2704266A728D00ED10B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				047AD691266E4AC3004410FE /* Namecard.swift */,
 				04D0BDC7266C0BAE003A22DB /* mycardTableViewCell.swift */,
 				047E2708266A728D00ED10B7 /* Main.storyboard */,
+				047AD6A3266FC3D8004410FE /* 人脈.storyboard */,
+				047AD6A6266FC5F3004410FE /* 我的名片.storyboard */,
 				047E270B266A729100ED10B7 /* Assets.xcassets */,
 				047E270D266A729100ED10B7 /* LaunchScreen.storyboard */,
 				047E2710266A729100ED10B7 /* Info.plist */,
@@ -142,6 +148,8 @@
 				047E270F266A729100ED10B7 /* LaunchScreen.storyboard in Resources */,
 				047AD68F266E4664004410FE /* namecardContent.plist in Resources */,
 				047E270C266A729100ED10B7 /* Assets.xcassets in Resources */,
+				047AD6A7266FC5F3004410FE /* 我的名片.storyboard in Resources */,
+				047AD6A4266FC3D8004410FE /* 人脈.storyboard in Resources */,
 				047E270A266A728D00ED10B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
