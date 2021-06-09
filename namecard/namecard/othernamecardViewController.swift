@@ -10,12 +10,12 @@ import UIKit
 class othernamecardViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     var namecards = [Namecard]()
-
-    @IBOutlet var tableview: UITableView!
+    @IBOutlet weak var tableview: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        
         tableview.delegate = self
         tableview.dataSource = self
         
@@ -36,19 +36,19 @@ class othernamecardViewController: UIViewController,UITableViewDelegate,UITableV
         let cell = tableView.dequeueReusableCell(withIdentifier: "othercardTableViewCell", for: indexPath) as?othercardTableViewCell
         let namecard = namecards[indexPath.row]
         cell?.namelabel.text = namecard.Name
-        cell?.joblabel.text = namecard.Job
         return cell!
     }
 }
 
 
-extension ViewController {
-private func fetchData() {
-    guard let path = Bundle.main.path(forResource: "namecardContent", ofType: "plist"),
-          let xml = FileManager.default.contents(atPath: path),
-          let namecards = try? PropertyListDecoder().decode([Namecard].self, from: xml) else {
-        return
-}
-
-}
-}
+//extension ViewController {
+//private func fetchData() {
+//    guard let path = Bundle.main.path(forResource: "namecardContent", ofType: "plist"),
+//          let xml = FileManager.default.contents(atPath: path),
+//          let namecards = try? PropertyListDecoder().decode([Namecard].self, from: xml) else {
+//        return
+//}
+//
+//
+//}
+//}

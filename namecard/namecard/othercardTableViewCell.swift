@@ -10,7 +10,7 @@ import UIKit
 class othercardTableViewCell: UITableViewCell {
 
     @IBOutlet weak var namelabel: UILabel!
-    @IBOutlet weak var joblabel: UILabel!
+    
     @IBOutlet weak var imageview: UIImageView!
     
     override func awakeFromNib() {
