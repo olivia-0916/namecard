@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-<<<<<<< HEAD
+
         <!--我的名片-->
         <scene sceneID="4GT-vk-83B">
             <objects>
@@ -26,7 +26,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cp4-Hw-Zfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="450" y="-219"/>
-=======
+
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -218,7 +218,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lBi-Ze-PM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3283" y="-795"/>
->>>>>>> 395d03228f18f3c02c0c93e1022c8e7ac41f7831
+
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mp6-aU-W5H">
@@ -230,7 +230,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-<<<<<<< HEAD
+
                         <segue destination="eDu-WK-OPx" kind="relationship" relationship="viewControllers" id="UEp-Fs-al4"/>
                         <segue destination="yWa-Br-Yfu" kind="relationship" relationship="viewControllers" id="SDJ-xc-AHn"/>
                     </connections>
@@ -238,7 +238,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PZR-qA-DS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-196" y="-56"/>
-=======
+
                         <segue destination="LKL-wB-gPN" kind="relationship" relationship="viewControllers" id="83m-4x-L4K"/>
                         <segue destination="SuX-Rt-Lvp" kind="relationship" relationship="viewControllers" id="f9n-08-cUF"/>
                     </connections>
@@ -372,7 +372,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRx-il-Vx8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="235" y="852"/>
->>>>>>> 395d03228f18f3c02c0c93e1022c8e7ac41f7831
+
         </scene>
     </scenes>
 </document>
