@@ -26,7 +26,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cp4-Hw-Zfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="450" y="-219"/>
+<<<<<<< HEAD
 
+=======
+=======
+<<<<<<< HEAD
+        <!--我的名片-->
+        <scene sceneID="4GT-vk-83B">
+            <objects>
+                <viewControllerPlaceholder storyboardName="我的名片" id="yWa-Br-Yfu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="9Ft-Ky-Enc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQt-Lg-5Ux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="432" y="-1"/>
+        </scene>
+        <!--人脈-->
+        <scene sceneID="d8P-iO-yt2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="人脈" id="eDu-WK-OPx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="rjK-9e-4JI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cp4-Hw-Zfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="450" y="-219"/>
+=======
+>>>>>>> 298da64ec79345bc7e7ea8106608f49323cdc2e8
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -218,7 +243,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lBi-Ze-PM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3283" y="-795"/>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 395d03228f18f3c02c0c93e1022c8e7ac41f7831
+>>>>>>> 877772617b3be72ef4966eeaa5402ab38422ea79
+>>>>>>> 298da64ec79345bc7e7ea8106608f49323cdc2e8
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mp6-aU-W5H">
@@ -238,7 +268,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PZR-qA-DS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-196" y="-56"/>
+<<<<<<< HEAD
 
+=======
+=======
+<<<<<<< HEAD
+                        <segue destination="eDu-WK-OPx" kind="relationship" relationship="viewControllers" id="UEp-Fs-al4"/>
+                        <segue destination="yWa-Br-Yfu" kind="relationship" relationship="viewControllers" id="SDJ-xc-AHn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PZR-qA-DS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-196" y="-56"/>
+=======
+>>>>>>> 298da64ec79345bc7e7ea8106608f49323cdc2e8
                         <segue destination="LKL-wB-gPN" kind="relationship" relationship="viewControllers" id="83m-4x-L4K"/>
                         <segue destination="SuX-Rt-Lvp" kind="relationship" relationship="viewControllers" id="f9n-08-cUF"/>
                     </connections>
@@ -372,7 +415,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRx-il-Vx8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="235" y="852"/>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 395d03228f18f3c02c0c93e1022c8e7ac41f7831
+>>>>>>> 877772617b3be72ef4966eeaa5402ab38422ea79
+>>>>>>> 298da64ec79345bc7e7ea8106608f49323cdc2e8
         </scene>
     </scenes>
 </document>
