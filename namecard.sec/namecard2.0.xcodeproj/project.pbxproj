@@ -64,8 +64,8 @@
 				0407EDF12674DD0B0063014A /* Main.storyboard */,
 				0407EDF42674DD0E0063014A /* Assets.xcassets */,
 				0407EDF62674DD0E0063014A /* LaunchScreen.storyboard */,
-				0407EDF92674DD0E0063014A /* Info.plist */,
 				048205B12674DFA2006D26C9 /* Namecards.plist */,
+				0407EDF92674DD0E0063014A /* Info.plist */,
 			);
 			path = namecard2.0;
 			sourceTree = "<group>";
