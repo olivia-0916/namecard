@@ -10,15 +10,15 @@ import UIKit
 class collecDetailpageViewController: UIViewController {
 
     
+    
     @IBOutlet weak var namelabel: UILabel!
     
     var namecard: Namecard?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         namelabel.text = namecard?.Name
-        
-        
         
     }
     override func didReceiveMemoryWarning() {

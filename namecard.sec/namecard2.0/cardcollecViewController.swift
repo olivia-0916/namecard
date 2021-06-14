@@ -10,7 +10,8 @@ import UIKit
 class cardcollecViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     
-    var namecards = [Namecard]()
+    var namecards : [Namecard] = []
+    
     @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
@@ -19,9 +20,9 @@ class cardcollecViewController: UIViewController,UITableViewDelegate,UITableView
         //fet
         tableview.delegate = self
         tableview.dataSource = self
-
-
+        title = "人脈"
     }
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 250
@@ -30,12 +31,14 @@ class cardcollecViewController: UIViewController,UITableViewDelegate,UITableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return namecards.count
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cardcollecTableViewCell", for: indexPath) as?cardcollecTableViewCell
+        
         let namecard = namecards[indexPath.row]
         cell?.namelabel.text = namecard.Name
         cell?.joblabel.text = namecard.Job
@@ -63,10 +66,6 @@ class cardcollecViewController: UIViewController,UITableViewDelegate,UITableView
          }
 
      }
-    
-    
-
-
 }
 
 extension ViewController {
@@ -78,6 +77,7 @@ private func fetchData() {
     }
 //    self.namecards = namecards
 //    tableView.reloadData()
+    
 }
-
+    
 }
