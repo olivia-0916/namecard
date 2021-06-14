@@ -18,6 +18,9 @@
 		049E7EB326767045000BBDCE /* cardcollecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E7EB226767045000BBDCE /* cardcollecViewController.swift */; };
 		049E7EB6267670BC000BBDCE /* cardcollecTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E7EB5267670BC000BBDCE /* cardcollecTableViewCell.swift */; };
 		049E7EBB26767646000BBDCE /* collecDetailpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E7EBA26767646000BBDCE /* collecDetailpageViewController.swift */; };
+		BED23BAD2677B0AD0049DA39 /* mycard.plist in Resources */ = {isa = PBXBuildFile; fileRef = BED23BAC2677B0AD0049DA39 /* mycard.plist */; };
+		BED23BB02677B1B70049DA39 /* mycardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED23BAF2677B1B70049DA39 /* mycardTableViewController.swift */; };
+		BED23BB32677B1EE0049DA39 /* mycardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED23BB22677B1EE0049DA39 /* mycardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		049E7EB226767045000BBDCE /* cardcollecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardcollecViewController.swift; sourceTree = "<group>"; };
 		049E7EB5267670BC000BBDCE /* cardcollecTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardcollecTableViewCell.swift; sourceTree = "<group>"; };
 		049E7EBA26767646000BBDCE /* collecDetailpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collecDetailpageViewController.swift; sourceTree = "<group>"; };
+		BED23BAC2677B0AD0049DA39 /* mycard.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = mycard.plist; sourceTree = "<group>"; };
+		BED23BAF2677B1B70049DA39 /* mycardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mycardTableViewController.swift; sourceTree = "<group>"; };
+		BED23BB22677B1EE0049DA39 /* mycardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mycardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,13 +76,16 @@
 				0407EDED2674DD0B0063014A /* SceneDelegate.swift */,
 				0407EDEF2674DD0B0063014A /* ViewController.swift */,
 				049E7EB226767045000BBDCE /* cardcollecViewController.swift */,
-				049E7EBA26767646000BBDCE /* collecDetailpageViewController.swift */,
-				0407EDF12674DD0B0063014A /* Main.storyboard */,
 				049E7EB5267670BC000BBDCE /* cardcollecTableViewCell.swift */,
+				0407EDF12674DD0B0063014A /* Main.storyboard */,
+				049E7EBA26767646000BBDCE /* collecDetailpageViewController.swift */,
+				BED23BAF2677B1B70049DA39 /* mycardTableViewController.swift */,
+				BED23BB22677B1EE0049DA39 /* mycardTableViewCell.swift */,
 				049E7EAB26766B3B000BBDCE /* Namecard.swift */,
 				0407EDF42674DD0E0063014A /* Assets.xcassets */,
 				0407EDF62674DD0E0063014A /* LaunchScreen.storyboard */,
 				048205B12674DFA2006D26C9 /* Namecards.plist */,
+				BED23BAC2677B0AD0049DA39 /* mycard.plist */,
 				0407EDF92674DD0E0063014A /* Info.plist */,
 			);
 			path = namecard2.0;
@@ -141,6 +150,7 @@
 			files = (
 				0407EDF82674DD0E0063014A /* LaunchScreen.storyboard in Resources */,
 				0407EDF52674DD0E0063014A /* Assets.xcassets in Resources */,
+				BED23BAD2677B0AD0049DA39 /* mycard.plist in Resources */,
 				0407EDF32674DD0B0063014A /* Main.storyboard in Resources */,
 				048205B22674DFA2006D26C9 /* Namecards.plist in Resources */,
 			);
@@ -154,9 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				049E7EB326767045000BBDCE /* cardcollecViewController.swift in Sources */,
+				BED23BB02677B1B70049DA39 /* mycardTableViewController.swift in Sources */,
 				049E7EAC26766B3B000BBDCE /* Namecard.swift in Sources */,
 				0407EDF02674DD0B0063014A /* ViewController.swift in Sources */,
 				0407EDEC2674DD0B0063014A /* AppDelegate.swift in Sources */,
+				BED23BB32677B1EE0049DA39 /* mycardTableViewCell.swift in Sources */,
 				0407EDEE2674DD0B0063014A /* SceneDelegate.swift in Sources */,
 				049E7EBB26767646000BBDCE /* collecDetailpageViewController.swift in Sources */,
 				049E7EB6267670BC000BBDCE /* cardcollecTableViewCell.swift in Sources */,
