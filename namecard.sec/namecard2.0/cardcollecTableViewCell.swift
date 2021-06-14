@@ -7,7 +7,7 @@
 
 import UIKit
 
-class cardcollectionTableViewCell: UITableViewCell {
+class cardcollecTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageview: UIImageView!
     @IBOutlet weak var namelabel: UILabel!
