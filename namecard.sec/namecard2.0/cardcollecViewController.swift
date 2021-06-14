@@ -7,7 +7,7 @@
 
 import UIKit
 
-class cardcollectionViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+class cardcollecViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     
     var namecards = [Namecard]()
@@ -16,7 +16,7 @@ class cardcollectionViewController: UIViewController,UITableViewDelegate,UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //fetch
+        //fet
         tableview.delegate = self
         tableview.dataSource = self
 
@@ -35,13 +35,35 @@ class cardcollectionViewController: UIViewController,UITableViewDelegate,UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cardcollectionTableViewCell", for: indexPath) as?cardcollectionTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cardcollecTableViewCell", for: indexPath) as?cardcollecTableViewCell
         let namecard = namecards[indexPath.row]
         cell?.namelabel.text = namecard.Name
         cell?.joblabel.text = namecard.Job
         cell?.companylabel.text = namecard.Company
         return cell!
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+          let namecard = namecards[indexPath.row]
+     
+         performSegue(withIdentifier: "gotocollecdetailpage", sender: namecard)
+     }
+     
+     
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         
+         //print(sender as? String)
+         switch segue.identifier {
+         case "gotocollecdetailpage":
+             let namecard = sender as? Namecard
+             if let collecDetailpageViewController = segue.destination as? collecDetailpageViewController{
+                collecDetailpageViewController.namecard = namecard
+             }
+         default:
+             break
+         }
+
+     }
+    
     
 
 
