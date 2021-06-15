@@ -40,9 +40,13 @@ class cardcollecViewController: UIViewController,UITableViewDelegate,UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "cardcollecTableViewCell", for: indexPath) as?cardcollecTableViewCell
         
         let namecard = namecards[indexPath.row]
+        cell?.addresslabel.text = namecard.address
+        cell?.emaillabel.text = namecard.email
         cell?.namelabel.text = namecard.name
         cell?.joblabel.text = namecard.job
         cell?.companylabel.text = namecard.company
+        cell?.imageview.image = UIImage(named: (namecard.photoimage)!)
+
         return cell!
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
