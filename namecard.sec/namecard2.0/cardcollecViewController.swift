@@ -40,9 +40,9 @@ class cardcollecViewController: UIViewController,UITableViewDelegate,UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "cardcollecTableViewCell", for: indexPath) as?cardcollecTableViewCell
         
         let namecard = namecards[indexPath.row]
-        cell?.namelabel.text = namecard.Name
-        cell?.joblabel.text = namecard.Job
-        cell?.companylabel.text = namecard.Company
+        cell?.namelabel.text = namecard.name
+        cell?.joblabel.text = namecard.job
+        cell?.companylabel.text = namecard.company
         return cell!
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -75,6 +75,7 @@ private func fetchData() {
           let namecards = try? PropertyListDecoder().decode([Namecard].self, from: xml) else {
         return
     }
+    
     self.namecards = namecards
     tableview.reloadData()
 

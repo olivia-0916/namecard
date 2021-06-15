@@ -7,8 +7,8 @@
 
 import Foundation
 struct Namecard: Decodable {
-    var Name: String
-    var Job: String
-    var Company: String
-    var Image: String
+    var name: String
+    var job: String
+    var company: String
+    var image: String?
 }

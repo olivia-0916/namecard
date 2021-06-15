@@ -124,7 +124,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="250" id="6Dp-8Y-gCU" customClass="cardcollecTableViewCell" customModule="namecard2_0" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cardcollecTableViewCell" rowHeight="250" id="6Dp-8Y-gCU" customClass="cardcollecTableViewCell" customModule="namecard2_0" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Dp-8Y-gCU" id="yNe-pQ-ynO">
@@ -190,7 +190,7 @@
                     <navigationItem key="navigationItem" id="nyL-2g-YbD"/>
                     <connections>
                         <outlet property="tableview" destination="uGr-91-E37" id="9zz-Kf-0MV"/>
-                        <segue destination="Mj7-Tz-Yce" kind="show" id="3oK-wk-7Zm"/>
+                        <segue destination="Mj7-Tz-Yce" kind="show" identifier="gotocollecdetailpage" id="3oK-wk-7Zm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flI-Rb-LAR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -772,7 +772,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9Ar-SW-EAY"/>
+        <segue reference="mOe-0X-xMB"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="secondaryLabelColor">

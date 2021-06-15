@@ -22,10 +22,13 @@ class collecDetailpageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        namelabel.text = namecard?.Name
-        joblabel.text = namecard?.Job
-        companylabel.text = namecard?.Company
-        iamgeview.image = UIImage(named: (namecard?.Image)!)
+        namelabel.text = namecard?.name
+        joblabel.text = namecard?.job
+        companylabel.text = namecard?.company
+        if let imageName = namecard?.image {
+            iamgeview.image = UIImage(named: imageName)
+            
+        }
         
     }
     override func didReceiveMemoryWarning() {
