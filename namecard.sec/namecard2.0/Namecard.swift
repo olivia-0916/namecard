@@ -10,5 +10,7 @@ struct Namecard: Decodable {
     var name: String
     var job: String
     var company: String
-    var image: String?
+    var email: String
+    var address: String
+    var photoimage: String?
 }

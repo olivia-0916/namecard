@@ -25,7 +25,7 @@ class collecDetailpageViewController: UIViewController {
         namelabel.text = namecard?.name
         joblabel.text = namecard?.job
         companylabel.text = namecard?.company
-        if let imageName = namecard?.image {
+        if let imageName = namecard?.photoimage {
             iamgeview.image = UIImage(named: imageName)
             
         }

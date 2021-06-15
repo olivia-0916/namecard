@@ -9,7 +9,13 @@
 		<string>PM</string>
 		<key>company</key>
 		<string>Quick</string>
-		<key>iamge</key>
+		<key>email</key>
+		<string>yuxuanlin599@gmail</string>
+		<key>mobile</key>
+		<string>0966192639</string>
+		<key>address</key>
+		<string>1, 23 Lane, RR Street, WD District, OO City</string>
+		<key>photoimage</key>
 		<string></string>
 	</dict>
 	<dict>
@@ -19,7 +25,13 @@
 		<string>Cop</string>
 		<key>company</key>
 		<string>Quick</string>
-		<key>iamge</key>
+		<key>email</key>
+		<string>yuxuanlin599@gmail</string>
+		<key>mobile</key>
+		<string>0966192639</string>
+		<key>address</key>
+		<string>1, 23 Lane, RR Street, WD District, OO City</string>
+		<key>photoimage</key>
 		<string></string>
 	</dict>
 	<dict>
@@ -29,7 +41,13 @@
 		<string>PM</string>
 		<key>company</key>
 		<string>Quick</string>
-		<key>iamge</key>
+		<key>email</key>
+		<string>yuxuanlin599@gmail</string>
+		<key>mobile</key>
+		<string>0966192639</string>
+		<key>address</key>
+		<string>1, 23 Lane, RR Street, WD District, OO City</string>
+		<key>photoimage</key>
 		<string></string>
 	</dict>
 	<dict>
@@ -39,7 +57,13 @@
 		<string>designer</string>
 		<key>company</key>
 		<string>Quick</string>
-		<key>iamge</key>
+		<key>email</key>
+		<string>yuxuanlin599@gmail</string>
+		<key>mobile</key>
+		<string>0966192639</string>
+		<key>address</key>
+		<string>1, 23 Lane, RR Street, WD District, OO City</string>
+		<key>photoimage</key>
 		<string></string>
 	</dict>
 </array>
