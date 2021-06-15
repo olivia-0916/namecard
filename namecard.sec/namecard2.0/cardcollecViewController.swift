@@ -17,7 +17,7 @@ class cardcollecViewController: UIViewController,UITableViewDelegate,UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //fet
+        fetchData()
         tableview.delegate = self
         tableview.dataSource = self
         title = "人脈"
@@ -68,16 +68,17 @@ class cardcollecViewController: UIViewController,UITableViewDelegate,UITableView
      }
 }
 
-extension ViewController {
+extension cardcollecViewController {
 private func fetchData() {
     guard let path = Bundle.main.path(forResource: "Namecards", ofType: "plist"),
           let xml = FileManager.default.contents(atPath: path),
           let namecards = try? PropertyListDecoder().decode([Namecard].self, from: xml) else {
         return
     }
-//    self.namecards = namecards
-//    tableView.reloadData()
-    
+    self.namecards = namecards
+    tableview.reloadData()
+
+}
 }
     
-}
+
