@@ -12,6 +12,10 @@ class collecDetailpageViewController: UIViewController {
     
     
     @IBOutlet weak var namelabel: UILabel!
+    @IBOutlet weak var joblabel: UILabel!
+    @IBOutlet weak var companylabel: UILabel!
+    @IBOutlet weak var deletebutton: UIButton!
+    @IBOutlet weak var iamgeview: UIImageView!
     
     var namecard: Namecard?
     
@@ -19,6 +23,9 @@ class collecDetailpageViewController: UIViewController {
         super.viewDidLoad()
         
         namelabel.text = namecard?.Name
+        joblabel.text = namecard?.Job
+        companylabel.text = namecard?.Company
+        iamgeview.image = UIImage(named: (namecard?.Image)!)
         
     }
     override func didReceiveMemoryWarning() {

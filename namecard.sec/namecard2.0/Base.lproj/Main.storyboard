@@ -219,6 +219,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="joblabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXl-qg-f5Q">
+                                <rect key="frame" x="30" y="238.5" width="59.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIM-Ja-TGn">
+                                <rect key="frame" x="30" y="289" width="70" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eF-Wb-QEN">
+                                <rect key="frame" x="177" y="481" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="刪除名片">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZNb-iL-6Aj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -226,13 +245,21 @@
                             <constraint firstItem="Dw6-ZN-f9X" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="2ic-Gf-thv"/>
                             <constraint firstItem="cyI-Yn-q0Z" firstAttribute="top" secondItem="ZNb-iL-6Aj" secondAttribute="top" constant="100" id="AH1-Nn-0Mr"/>
                             <constraint firstItem="ZNb-iL-6Aj" firstAttribute="trailing" secondItem="cyI-Yn-q0Z" secondAttribute="trailing" constant="30" id="Lyd-J7-uPo"/>
+                            <constraint firstItem="LIM-Ja-TGn" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="MZT-C7-Wur"/>
                             <constraint firstItem="Dw6-ZN-f9X" firstAttribute="top" secondItem="ZNb-iL-6Aj" secondAttribute="top" constant="100" id="PG5-EH-rsV"/>
                             <constraint firstItem="ZNb-iL-6Aj" firstAttribute="bottom" secondItem="cyI-Yn-q0Z" secondAttribute="bottom" constant="525" id="d46-4Z-Bxk"/>
+                            <constraint firstItem="LIM-Ja-TGn" firstAttribute="top" secondItem="JXl-qg-f5Q" secondAttribute="bottom" constant="30" id="jYX-Fo-kjm"/>
+                            <constraint firstItem="JXl-qg-f5Q" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="lLZ-bg-fXe"/>
+                            <constraint firstItem="JXl-qg-f5Q" firstAttribute="top" secondItem="Dw6-ZN-f9X" secondAttribute="bottom" constant="30" id="pBz-hv-yQx"/>
                             <constraint firstItem="cyI-Yn-q0Z" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="284" id="qYM-7C-xki"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5NZ-az-hJ0"/>
                     <connections>
+                        <outlet property="companylabel" destination="LIM-Ja-TGn" id="6pa-A1-LRz"/>
+                        <outlet property="deletebutton" destination="4eF-Wb-QEN" id="jnP-uJ-BkH"/>
+                        <outlet property="iamgeview" destination="MqM-ZV-Uc1" id="hIk-Ri-2oB"/>
+                        <outlet property="joblabel" destination="JXl-qg-f5Q" id="eSy-ll-kCO"/>
                         <outlet property="namelabel" destination="Dw6-ZN-f9X" id="uT8-Ew-VQU"/>
                     </connections>
                 </viewController>
@@ -745,7 +772,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mOe-0X-xMB"/>
+        <segue reference="9Ar-SW-EAY"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="secondaryLabelColor">
