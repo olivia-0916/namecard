@@ -1,19 +1,14 @@
 //
-//  mycardTableViewCell.swift
+//  cardinfoTableViewCell.swift
 //  namecard2.0
 //
-//  Created by 曾意晴 on 2021/6/14.
+//  Created by 曾意晴 on 2021/6/15.
 //
 
 import UIKit
 
-class mycardTableViewCell: UITableViewCell {
+class cardinfoTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var mylabel: UILabel!
-    @IBOutlet weak var myjob: UILabel!
-    @IBOutlet weak var mycompany: UILabel!
-    @IBOutlet weak var myimage: UIImageView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
