@@ -11,7 +11,7 @@
         <!--mycard-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="mycard" id="BYZ-38-t0r" customClass="ViewController" customModule="namecard2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="mycard" id="BYZ-38-t0r" customClass="mycardTableViewController" customModule="namecard2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="241" id="CrG-Pz-8aM" customClass="cardcollectionTableViewCell" customModule="namecard2_0" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mycardTableViewCell" rowHeight="241" id="CrG-Pz-8aM" customClass="mycardTableViewCell" customModule="namecard2_0" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="241"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CrG-Pz-8aM" id="0xi-vf-ygf">
@@ -69,6 +69,10 @@
                                             <outlet property="companylabel" destination="Y5z-iF-yWE" id="IdE-x7-IKB"/>
                                             <outlet property="imageview" destination="UxU-VS-rsz" id="PQ6-7j-nD0"/>
                                             <outlet property="joblabel" destination="eUF-LV-Evw" id="kqS-9F-iRR"/>
+                                            <outlet property="mycompany" destination="Y5z-iF-yWE" id="iSh-QQ-LzR"/>
+                                            <outlet property="myimage" destination="UxU-VS-rsz" id="axm-NN-uje"/>
+                                            <outlet property="myjob" destination="eUF-LV-Evw" id="CXm-zh-tYc"/>
+                                            <outlet property="mylabel" destination="5DI-9J-qu7" id="GUt-x6-TUq"/>
                                             <outlet property="namelabel" destination="5DI-9J-qu7" id="3an-XY-aIN"/>
                                         </connections>
                                     </tableViewCell>
@@ -104,6 +108,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hIE-VZ-Azg"/>
                     <connections>
+                        <outlet property="mytableview" destination="RTu-Km-vBt" id="DYp-iZ-ZPM"/>
                         <segue destination="Ayl-5y-eU9" kind="show" identifier="gotocreatecard" id="9Ar-SW-EAY"/>
                         <segue destination="xj4-I4-X5V" kind="show" identifier="gotocaardinfo" id="Xnk-5D-dBZ"/>
                     </connections>
@@ -288,13 +293,13 @@
         <!--createcard-->
         <scene sceneID="0NV-SP-kbq">
             <objects>
-                <tableViewController title="createcard" id="Ayl-5y-eU9" sceneMemberID="viewController">
+                <tableViewController title="createcard" id="Ayl-5y-eU9" customClass="createcardTableViewController" customModule="namecard2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jW2-6N-o6a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="544" id="GZb-iw-xOp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="544" id="GZb-iw-xOp" customClass="createcardTableViewCell" customModule="namecard2_0" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="544"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GZb-iw-xOp" id="shg-yA-Ccm">
@@ -597,13 +602,13 @@
         <!--cardinfo-->
         <scene sceneID="WbI-Wa-XWO">
             <objects>
-                <tableViewController title="cardinfo" id="xj4-I4-X5V" sceneMemberID="viewController">
+                <tableViewController title="cardinfo" id="xj4-I4-X5V" customClass="cardinfoTableViewController" customModule="namecard2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cJM-zp-jV2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="544" id="EXD-k2-9Mh">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="544" id="EXD-k2-9Mh" customClass="cardinfoTableViewCell" customModule="namecard2_0" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="544"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EXD-k2-9Mh" id="D3X-Yc-5eF">
@@ -799,6 +804,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Vav-9m-XC4"/>
                     <connections>
+                        <outlet property="infoTableView" destination="cJM-zp-jV2" id="vDM-4p-qna"/>
                         <segue destination="Ayl-5y-eU9" kind="show" identifier="gotocreatcard" id="mOe-0X-xMB"/>
                     </connections>
                 </tableViewController>
