@@ -11,7 +11,7 @@
         <!--mycard-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="mycard" id="BYZ-38-t0r" customClass="mycardTableViewController" customModule="namecard2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="mycard" id="BYZ-38-t0r" customClass="mycardViewController" customModule="namecard2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,14 +66,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="companylabel" destination="Y5z-iF-yWE" id="IdE-x7-IKB"/>
-                                            <outlet property="imageview" destination="UxU-VS-rsz" id="PQ6-7j-nD0"/>
-                                            <outlet property="joblabel" destination="eUF-LV-Evw" id="kqS-9F-iRR"/>
                                             <outlet property="mycompany" destination="Y5z-iF-yWE" id="iSh-QQ-LzR"/>
                                             <outlet property="myimage" destination="UxU-VS-rsz" id="axm-NN-uje"/>
                                             <outlet property="myjob" destination="eUF-LV-Evw" id="CXm-zh-tYc"/>
                                             <outlet property="mylabel" destination="5DI-9J-qu7" id="GUt-x6-TUq"/>
-                                            <outlet property="namelabel" destination="5DI-9J-qu7" id="3an-XY-aIN"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="134" id="ECt-wj-mLQ">
@@ -108,7 +104,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hIE-VZ-Azg"/>
                     <connections>
-                        <outlet property="mytableview" destination="RTu-Km-vBt" id="DYp-iZ-ZPM"/>
+                        <outlet property="mytableview" destination="RTu-Km-vBt" id="jx3-r2-1dF"/>
                         <segue destination="Ayl-5y-eU9" kind="show" identifier="gotocreatecard" id="9Ar-SW-EAY"/>
                         <segue destination="xj4-I4-X5V" kind="show" identifier="gotocaardinfo" id="Xnk-5D-dBZ"/>
                     </connections>
@@ -804,7 +800,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Vav-9m-XC4"/>
                     <connections>
-                        <outlet property="infoTableView" destination="cJM-zp-jV2" id="vDM-4p-qna"/>
+                        <outlet property="infotableview" destination="cJM-zp-jV2" id="0Lx-a0-NzQ"/>
                         <segue destination="Ayl-5y-eU9" kind="show" identifier="gotocreatcard" id="mOe-0X-xMB"/>
                     </connections>
                 </tableViewController>

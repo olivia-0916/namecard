@@ -1,14 +1,14 @@
 //
-//  mycardTableViewController.swift
+//  mycardViewController.swift
 //  namecard2.0
 //
-//  Created by 曾意晴 on 2021/6/14.
+//  Created by 曾意晴 on 2021/6/16.
 //
 
 import UIKit
 
-class mycardTableViewController: UITableViewController/*,UITableViewDelegate,UITableViewDataSource*/ {
-
+class mycardViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
     var mynamecards : [Namecard] = []
     
     @IBOutlet weak var mytableview: UITableView!
@@ -20,35 +20,34 @@ class mycardTableViewController: UITableViewController/*,UITableViewDelegate,UIT
         mytableview.delegate = self
         mytableview.dataSource = self
         title = "名片"
-
-        
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 250
     }
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mynamecards.count
     }
     
-    func tableView(_tableView: UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell{
         let mycell = tableView.dequeueReusableCell(withIdentifier: "mycardTableViewCell", for: indexPath) as? mycardTableViewCell
         
         let mynamecard = mynamecards[indexPath.row]
         mycell?.mylabel.text = mynamecard.name
         mycell?.myjob.text = mynamecard.job
         mycell?.mycompany.text = mynamecard.company
+        mycell?.imageView?.image = UIImage(named: (mynamecard.photoimage)!)
         
         return mycell!
         
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
           let mynamecard = mynamecards[indexPath.row]
      
          performSegue(withIdentifier: "gotocaardinfo", sender: mynamecard)
@@ -56,7 +55,6 @@ class mycardTableViewController: UITableViewController/*,UITableViewDelegate,UIT
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        //print(sender as? String)
         switch segue.identifier {
         case "gotocaardinfo":
             let namecard = sender as? Namecard
@@ -71,7 +69,7 @@ class mycardTableViewController: UITableViewController/*,UITableViewDelegate,UIT
 
 }
 
-extension mycardTableViewController {
+extension mycardViewController {
 private func fetchData() {
     guard let path = Bundle.main.path(forResource: "Namecards", ofType: "plist"),
           let xml = FileManager.default.contents(atPath: path),
