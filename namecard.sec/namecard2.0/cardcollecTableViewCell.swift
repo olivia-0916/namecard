@@ -15,6 +15,7 @@ class cardcollecTableViewCell: UITableViewCell {
     @IBOutlet weak var companylabel: UILabel!
     @IBOutlet weak var addresslabel: UILabel!
     @IBOutlet weak var emaillabel: UILabel!
+    @IBOutlet weak var mobilelabel: UILabel!
     
     
     override func awakeFromNib() {

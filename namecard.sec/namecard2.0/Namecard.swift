@@ -12,5 +12,6 @@ struct Namecard: Decodable {
     var company: String
     var email: String
     var address: String
+    var mobile: String
     var photoimage: String?
 }
