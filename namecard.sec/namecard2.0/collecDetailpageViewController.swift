@@ -16,7 +16,9 @@ class collecDetailpageViewController: UIViewController {
     @IBOutlet weak var companylabel: UILabel!
     @IBOutlet weak var deletebutton: UIButton!
     @IBOutlet weak var iamgeview: UIImageView!
-    
+    @IBOutlet weak var emaillabel: UILabel!
+    @IBOutlet weak var mobilelabel: UILabel!
+    @IBOutlet weak var addresslabel: UILabel!
     var namecard: Namecard?
     
     override func viewDidLoad() {
@@ -25,6 +27,9 @@ class collecDetailpageViewController: UIViewController {
         namelabel.text = namecard?.name
         joblabel.text = namecard?.job
         companylabel.text = namecard?.company
+        emaillabel.text = namecard?.email
+        mobilelabel.text = namecard?.mobile
+        addresslabel.text = namecard?.address
         if let imageName = namecard?.photoimage {
             iamgeview.image = UIImage(named: imageName)
             
