@@ -800,7 +800,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Vav-9m-XC4"/>
                     <connections>
-                        <outlet property="infotableview" destination="cJM-zp-jV2" id="0Lx-a0-NzQ"/>
                         <segue destination="Ayl-5y-eU9" kind="show" identifier="gotocreatcard" id="mOe-0X-xMB"/>
                     </connections>
                 </tableViewController>
@@ -810,7 +809,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9Ar-SW-EAY"/>
+        <segue reference="mOe-0X-xMB"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="secondaryLabelColor">
