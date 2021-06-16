@@ -14,7 +14,6 @@ class collecDetailpageViewController: UIViewController {
     @IBOutlet weak var namelabel: UILabel!
     @IBOutlet weak var joblabel: UILabel!
     @IBOutlet weak var companylabel: UILabel!
-    @IBOutlet weak var deletebutton: UIButton!
     @IBOutlet weak var iamgeview: UIImageView!
     @IBOutlet weak var emaillabel: UILabel!
     @IBOutlet weak var mobilelabel: UILabel!

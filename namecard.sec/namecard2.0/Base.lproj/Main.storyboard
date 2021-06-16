@@ -254,12 +254,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MqM-ZV-Uc1">
                                 <rect key="frame" x="247" y="189" width="100" height="100"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eF-Wb-QEN">
-                                <rect key="frame" x="177" y="481" width="62" height="30"/>
-                                <state key="normal" title="刪除名片">
-                                    <color key="titleColor" systemColor="systemRedColor"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJg-gk-Vbj">
                                 <rect key="frame" x="30" y="299.5" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -296,14 +290,12 @@
                             <constraint firstItem="JXl-qg-f5Q" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="lLZ-bg-fXe"/>
                             <constraint firstItem="ZNb-iL-6Aj" firstAttribute="trailing" secondItem="MqM-ZV-Uc1" secondAttribute="trailing" constant="30" id="nzf-GZ-Vxg"/>
                             <constraint firstItem="JXl-qg-f5Q" firstAttribute="top" secondItem="Dw6-ZN-f9X" secondAttribute="bottom" constant="20" id="pBz-hv-yQx"/>
-                            <constraint firstItem="4eF-Wb-QEN" firstAttribute="centerX" secondItem="ZNb-iL-6Aj" secondAttribute="centerX" id="sDA-KI-Gsd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5NZ-az-hJ0"/>
                     <connections>
                         <outlet property="addresslabel" destination="2T5-L6-YsY" id="M3C-GH-QVd"/>
                         <outlet property="companylabel" destination="LIM-Ja-TGn" id="6pa-A1-LRz"/>
-                        <outlet property="deletebutton" destination="4eF-Wb-QEN" id="jnP-uJ-BkH"/>
                         <outlet property="emaillabel" destination="LJg-gk-Vbj" id="FHz-2E-boT"/>
                         <outlet property="iamgeview" destination="MqM-ZV-Uc1" id="hIk-Ri-2oB"/>
                         <outlet property="joblabel" destination="JXl-qg-f5Q" id="eSy-ll-kCO"/>

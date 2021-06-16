@@ -86,5 +86,16 @@ private func fetchData() {
 
 }
 }
+extension cardcollecViewController {
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .default, title: "刪除") {
+            action, index in
+            
+            self.namecards.remove(at: index.row)
+            self.tableview.reloadData()
+        }
+        return [deleteAction]
+    }
+}
     
 
