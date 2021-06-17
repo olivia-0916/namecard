@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>John</string>
+		<key>job</key>
+		<string>PM</string>
+		<key>company</key>
+		<string>Quick</string>
+		<key>email</key>
+		<string>yuxuanlin599@gmail</string>
+		<key>mobile</key>
+		<string>0966192639</string>
+		<key>address</key>
+		<string>1, 23 Lane, RR Street, WD District, OO City</string>
+		<key>photoimage</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Sam</string>
+		<key>job</key>
+		<string>Cop</string>
+		<key>company</key>
+		<string>Quick</string>
+		<key>email</key>
+		<string>yuxuanlin599@gmail</string>
+		<key>mobile</key>
+		<string>0966192639</string>
+		<key>address</key>
+		<string>1, 23 Lane, RR Street, WD District, OO City</string>
+		<key>photoimage</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lee</string>
+		<key>job</key>
+		<string>PM</string>
+		<key>company</key>
+		<string>Quick</string>
+		<key>email</key>
+		<string>yuxuanlin599@gmail</string>
+		<key>mobile</key>
+		<string>0966192639</string>
+		<key>address</key>
+		<string>1, 23 Lane, RR Street, WD District, OO City</string>
+		<key>photoimage</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>jackson</string>
+		<key>job</key>
+		<string>designer</string>
+		<key>company</key>
+		<string>Quick</string>
+		<key>email</key>
+		<string>yuxuanlin599@gmail</string>
+		<key>mobile</key>
+		<string>0966192639</string>
+		<key>address</key>
+		<string>1, 23 Lane, RR Street, WD District, OO City</string>
+		<key>photoimage</key>
+		<string>3</string>
+	</dict>
+</array>
+</plist>
