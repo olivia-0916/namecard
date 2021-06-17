@@ -9,7 +9,7 @@ import UIKit
 
 class cardinfoViewController: UIViewController {
     
-    @IBOutlet weak var infonamelabel: UILabel!
+    
     
 
     
@@ -17,7 +17,7 @@ class cardinfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        infonamelabel.text = infonamecard?.name
+        
         
     }
     override func didReceiveMemoryWarning() {
