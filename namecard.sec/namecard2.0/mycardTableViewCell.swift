@@ -13,6 +13,9 @@ class mycardTableViewCell: UITableViewCell {
     @IBOutlet weak var myjob: UILabel!
     @IBOutlet weak var mycompany: UILabel!
     @IBOutlet weak var myimage: UIImageView!
+    @IBOutlet weak var myemail: UILabel!
+    @IBOutlet weak var mymobile: UILabel!
+    @IBOutlet weak var myaddress: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
