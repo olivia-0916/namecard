@@ -41,7 +41,7 @@ class mycardViewController: UIViewController,UITableViewDelegate,UITableViewData
         mycell?.mylabel.text = mynamecard.name
         mycell?.myjob.text = mynamecard.job
         mycell?.mycompany.text = mynamecard.company
-        mycell?.imageView?.image = UIImage(named: (mynamecard.photoimage)!)
+        mycell?.imageview?.image = UIImage(named: (mynamecard.photoimage)!)
         
         return mycell!
         

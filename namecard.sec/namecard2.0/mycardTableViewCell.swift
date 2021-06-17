@@ -12,7 +12,7 @@ class mycardTableViewCell: UITableViewCell {
     @IBOutlet weak var mylabel: UILabel!
     @IBOutlet weak var myjob: UILabel!
     @IBOutlet weak var mycompany: UILabel!
-    @IBOutlet weak var myimage: UIImageView!
+    @IBOutlet weak var imageview: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
