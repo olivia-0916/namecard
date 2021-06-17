@@ -42,6 +42,9 @@ class mycardViewController: UIViewController,UITableViewDelegate,UITableViewData
         mycell?.myjob.text = mynamecard.job
         mycell?.mycompany.text = mynamecard.company
         mycell?.imageView?.image = UIImage(named: (mynamecard.photoimage)!)
+        mycell?.myemail.text = mynamecard.email
+        mycell?.mymobile.text = mynamecard.mobile
+        mycell?.myaddress.text = mynamecard.address
         
         return mycell!
         
@@ -53,19 +56,19 @@ class mycardViewController: UIViewController,UITableViewDelegate,UITableViewData
          performSegue(withIdentifier: "gotocaardinfo", sender: mynamecard)
      }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        switch segue.identifier {
-        case "gotocaardinfo":
-            let namecard = sender as? Namecard
-            if let cardinfoTableViewController = segue.destination as? cardinfoTableViewController{
-                cardinfoTableViewController.infonamecard = namecard
-            }
-        default:
-            break
-        }
-
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        switch segue.identifier {
+//        case "gotocardinfo":
+//            let namecard = sender as? Namecard
+//            if let cardinfoViewController = segue.destination as? cardinfoViewController{
+//                cardinfoViewController.namecards = namecard
+//            }
+//        default:
+//            break
+//        }
+//
+//    }
 
 }
 
@@ -81,4 +84,16 @@ private func fetchData() {
     mytableview.reloadData()
 
 }
+}
+
+extension mycardViewController {
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .default, title: "刪除") {
+            action, index in
+            
+            self.mynamecards.remove(at: index.row)
+            self.mytableview.reloadData()
+        }
+        return [deleteAction]
+    }
 }
