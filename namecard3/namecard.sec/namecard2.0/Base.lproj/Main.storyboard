@@ -316,7 +316,7 @@
         <!--createcard-->
         <scene sceneID="2VJ-Q4-hzf">
             <objects>
-                <viewController title="createcard" id="Qur-lE-zTj" sceneMemberID="viewController">
+                <viewController title="createcard" id="Qur-lE-zTj" customClass="createcardViewController" customModule="namecard2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S39-aQ-A0o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -487,6 +487,14 @@
                         <barButtonItem key="rightBarButtonItem" title="Done" id="p5B-MM-lY0"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="createaddress" destination="maM-tA-5Rk" id="Yg3-UZ-Cuf"/>
+                        <outlet property="createcompany" destination="mCN-mS-Vse" id="1Bz-Tj-3I9"/>
+                        <outlet property="createemail" destination="Cbc-w3-daI" id="aTI-BU-pMK"/>
+                        <outlet property="createfb" destination="XJT-8j-il1" id="j0W-xa-PcE"/>
+                        <outlet property="createline" destination="AjT-G1-k80" id="I1Y-Wu-Yhm"/>
+                        <outlet property="createmobile" destination="gkM-bM-N4M" id="Bpi-zI-vkq"/>
+                        <outlet property="createname" destination="f5K-jp-cNh" id="0sz-zQ-xTc"/>
+                        <outlet property="createtitle" destination="Hy4-4l-ESv" id="wDC-vK-akg"/>
                         <segue destination="FCE-4c-dHV" kind="show" identifier="gotophoto" id="bB2-F3-j3o"/>
                         <segue destination="qv8-Tp-rwd" kind="show" identifier="gotosong" id="BbQ-Cq-wy8"/>
                     </connections>
