@@ -20,7 +20,6 @@
 		04A778E1267B85400052CA45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407EDEB2674DD0B0063014A /* AppDelegate.swift */; };
 		0A77192F267883DD00A8D339 /* changePhotoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77192E267883DD00A8D339 /* changePhotoPageViewController.swift */; };
 		BE2010132679E2830005033D /* mycardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2010122679E2830005033D /* mycardViewController.swift */; };
-		BE462F482678FDEC00BE54A1 /* createcardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE462F472678FDEC00BE54A1 /* createcardTableViewCell.swift */; };
 		BE920CB7267B3D3600BEC18E /* cardinfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE920CB6267B3D3600BEC18E /* cardinfoViewController.swift */; };
 		BE920CBB267B42D900BEC18E /* createcardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE920CBA267B42D900BEC18E /* createcardViewController.swift */; };
 		BED23BAD2677B0AD0049DA39 /* mycard.plist in Resources */ = {isa = PBXBuildFile; fileRef = BED23BAC2677B0AD0049DA39 /* mycard.plist */; };
@@ -43,7 +42,6 @@
 		049E7EBA26767646000BBDCE /* collecDetailpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collecDetailpageViewController.swift; sourceTree = "<group>"; };
 		0A77192E267883DD00A8D339 /* changePhotoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changePhotoPageViewController.swift; sourceTree = "<group>"; };
 		BE2010122679E2830005033D /* mycardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mycardViewController.swift; sourceTree = "<group>"; };
-		BE462F472678FDEC00BE54A1 /* createcardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createcardTableViewCell.swift; sourceTree = "<group>"; };
 		BE920CB6267B3D3600BEC18E /* cardinfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardinfoViewController.swift; sourceTree = "<group>"; };
 		BE920CBA267B42D900BEC18E /* createcardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createcardViewController.swift; sourceTree = "<group>"; };
 		BED23BAC2677B0AD0049DA39 /* mycard.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = mycard.plist; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				049E7EB5267670BC000BBDCE /* cardcollecTableViewCell.swift */,
 				049E7EBA26767646000BBDCE /* collecDetailpageViewController.swift */,
 				BE920CB6267B3D3600BEC18E /* cardinfoViewController.swift */,
-				BE462F472678FDEC00BE54A1 /* createcardTableViewCell.swift */,
 				BE920CBA267B42D900BEC18E /* createcardViewController.swift */,
 				0A77192E267883DD00A8D339 /* changePhotoPageViewController.swift */,
 				BE2010122679E2830005033D /* mycardViewController.swift */,
@@ -178,7 +175,6 @@
 				04A778E1267B85400052CA45 /* AppDelegate.swift in Sources */,
 				049E7EB326767045000BBDCE /* cardcollecViewController.swift in Sources */,
 				049E7EAC26766B3B000BBDCE /* Namecard.swift in Sources */,
-				BE462F482678FDEC00BE54A1 /* createcardTableViewCell.swift in Sources */,
 				0407EDF02674DD0B0063014A /* ViewController.swift in Sources */,
 				BE920CBB267B42D900BEC18E /* createcardViewController.swift in Sources */,
 				BED23BB32677B1EE0049DA39 /* mycardTableViewCell.swift in Sources */,

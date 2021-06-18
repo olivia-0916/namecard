@@ -9,21 +9,26 @@ import UIKit
 
 class createcardViewController: UIViewController {
 
+    
+    @IBOutlet weak var createname: UITextField!
+    @IBOutlet weak var createcompany: UITextField!
+    @IBOutlet weak var createtitle: UITextField!
+    @IBOutlet weak var createmobile: UITextField!
+    @IBOutlet weak var createemail: UITextField!
+    @IBOutlet weak var createaddress: UITextField!
+    @IBOutlet weak var createline: UITextField!
+    @IBOutlet weak var createfb: UITextField!
+    
+    var namecard: Namecard?
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
