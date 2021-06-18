@@ -10,60 +10,38 @@ import UIKit
 class cardinfoViewController: UIViewController {
     
     
+    @IBOutlet weak var nameinfo: UILabel!
+    @IBOutlet weak var companyinfo: UILabel!
+    @IBOutlet weak var titleinfo: UILabel!
+    @IBOutlet weak var mobileinfo: UILabel!
+    @IBOutlet weak var emailinfo: UILabel!
+    @IBOutlet weak var addressinfo: UILabel!
+    @IBOutlet weak var lineinfo: UILabel!
+    @IBOutlet weak var fbinfo: UILabel!
+    @IBOutlet weak var imageinfo: UIImageView!
     
-
     
     var infonamecard: Namecard?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        nameinfo.text = infonamecard?.name
+        companyinfo.text = infonamecard?.company
+        titleinfo.text = infonamecard?.job
+        mobileinfo.text = infonamecard?.mobile
+        emailinfo.text = infonamecard?.email
+        addressinfo.text = infonamecard?.address
+        lineinfo.text = infonamecard?.email
+        fbinfo.text = infonamecard?.name
+        if let imageName = infonamecard?.photoimage {
+            imageinfo.image = UIImage(named: imageName)
     }
+}
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 }
-    //    var namecards : [Namecard] = []
-//
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        infotableview.delegate = self
-//        infotableview.dataSource = self
-//        title = "名片內容"
-//
-//    }
-//
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 250
-//    }
-//
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return namecards.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell{
-//        let infocell = tableView.dequeueReusableCell(withIdentifier: "cardinfoTableViewCell", for: indexPath) as? cardinfoTableViewCell
-//
-//        let infonamecard = namecards[indexPath.row]
-//        infocell?.infoname.text = infonamecard.name
-//        infocell?.infotitle.text = infonamecard.job
-//        infocell?.infocompany.text = infonamecard.company
-//        infocell?.imageView?.image = UIImage(named: (infonamecard.photoimage)!)
-//        infocell?.infoemail.text = infonamecard.email
-//        infocell?.infomobile.text = infonamecard.mobile
-//        infocell?.infoaddress.text = infonamecard.address
-////        infocell?.infoline.text = infonamecard.email
-////        infocell?.infofb.text = infonamecard.name
-//
-//        return infocell!
-//    }
-    
-    
+
 
 }
