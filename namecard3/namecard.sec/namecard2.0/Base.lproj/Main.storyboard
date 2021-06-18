@@ -819,10 +819,13 @@
                             <constraint firstItem="tCb-xB-Y49" firstAttribute="trailing" secondItem="dxI-2I-jTN" secondAttribute="trailing" constant="30" id="mNe-U5-17F"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NrS-9s-cVM"/>
-                    <connections>
-                        <segue destination="Qur-lE-zTj" kind="show" identifier="infotocreate" id="fqv-fs-yi2"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="NrS-9s-cVM">
+                        <barButtonItem key="rightBarButtonItem" title="修改卡片" id="3RL-Wn-RdI">
+                            <connections>
+                                <segue destination="Qur-lE-zTj" kind="show" identifier="infotocreate" id="MmY-0E-Izv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kux-UX-Vg4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -830,7 +833,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fqv-fs-yi2"/>
+        <segue reference="MmY-0E-Izv"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="110" height="110"/>
