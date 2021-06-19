@@ -7,9 +7,15 @@
 
 import UIKit
 
-class cardinfoViewController: UIViewController{
+class cardinfoViewController: UIViewController,createcardViewControllerDelegate{
     
+    var delegate: cardinfoViewController?
+    var namelableinfo: String?
+    var companylableinfo: String?
     
+    @IBAction func gotocreat(_ sender: Any) {
+        performSegue(withIdentifier: "infotocreate", sender: self)
+    }
     @IBOutlet weak var nameinfo: UILabel!
     @IBOutlet weak var companyinfo: UILabel!
     @IBOutlet weak var titleinfo: UILabel!
@@ -20,8 +26,14 @@ class cardinfoViewController: UIViewController{
     @IBOutlet weak var fbinfo: UILabel!
     @IBOutlet weak var imageinfo: UIImageView!
     
-    
     var infonamecard: Namecard?
+    
+    func passData(namelabelinfo: String) {
+        nameinfo.text = namelabelinfo
+    }
+    func companypassData(companylableinfo: String) {
+        companyinfo.text = companylableinfo
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +50,15 @@ class cardinfoViewController: UIViewController{
             imageinfo.image = UIImage(named: imageName)
     }
 }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let gotocreat = segue.destination as? createcardViewController {
+                
+                gotocreat.namelableinfo = nameinfo.text
+                gotocreat.companylableinfo = companyinfo.text
+                gotocreat.delegate = self
+
+            }
+        }
 
         
     override func didReceiveMemoryWarning() {
