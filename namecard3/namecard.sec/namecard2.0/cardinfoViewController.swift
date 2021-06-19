@@ -7,7 +7,7 @@
 
 import UIKit
 
-class cardinfoViewController: UIViewController {
+class cardinfoViewController: UIViewController{
     
     
     @IBOutlet weak var nameinfo: UILabel!
@@ -38,6 +38,7 @@ class cardinfoViewController: UIViewController {
             imageinfo.image = UIImage(named: imageName)
     }
 }
+
         
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
