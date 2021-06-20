@@ -12,6 +12,13 @@ class cardinfoViewController: UIViewController,createcardViewControllerDelegate{
     var delegate: cardinfoViewController?
     var namelableinfo: String?
     var companylableinfo: String?
+    var titlelabelinfo: String?
+    var mobilelabelinfo: String?
+    var emaillabelinfo: String?
+    var addresslabelinfo: String?
+    var linelabelinfo: String?
+    var fblabelinfo: String?
+    
     
     @IBAction func gotocreat(_ sender: Any) {
         performSegue(withIdentifier: "infotocreate", sender: self)
@@ -35,6 +42,30 @@ class cardinfoViewController: UIViewController,createcardViewControllerDelegate{
         companyinfo.text = companylableinfo
     }
     
+    func titlepassData(titlelabelinfo: String){
+        titleinfo.text = titlelabelinfo
+    }
+    
+    func mobilepassData(mobilelabelinfo: String){
+        mobileinfo.text = mobilelabelinfo
+    }
+    
+    func emailpassData(emaillabelinfo: String){
+        emailinfo.text = emaillabelinfo
+    }
+    
+    func addresspassData(addresslabelinfo: String){
+        addressinfo.text = addresslabelinfo
+    }
+    
+    func linepassData(linelabelinfo: String){
+        lineinfo.text = linelabelinfo
+    }
+    
+    func fbpassData(fblabelinfo: String){
+        fbinfo.text = fblabelinfo
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -55,6 +86,13 @@ class cardinfoViewController: UIViewController,createcardViewControllerDelegate{
                 
                 gotocreat.namelableinfo = nameinfo.text
                 gotocreat.companylableinfo = companyinfo.text
+                gotocreat.titlelabelinfo = titleinfo.text
+                gotocreat.mobilelabelinfo = mobileinfo.text
+                gotocreat.emaillabelinfo = emailinfo.text
+                gotocreat.addresslabelinfo = addressinfo.text
+                gotocreat.linelabelinfo = lineinfo.text
+                gotocreat.fblabelinfo = fbinfo.text
+                
                 gotocreat.delegate = self
 
             }

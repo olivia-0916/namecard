@@ -12,6 +12,13 @@ class createcardViewController: UIViewController{
     var delegate: createcardViewControllerDelegate?
     var namelableinfo: String?
     var companylableinfo: String?
+    var titlelabelinfo: String?
+    var mobilelabelinfo: String?
+    var emaillabelinfo: String?
+    var addresslabelinfo: String?
+    var linelabelinfo: String?
+    var fblabelinfo: String?
+    
     
     @IBOutlet weak var createname: UITextField!
     @IBOutlet weak var createcompany: UITextField!
@@ -25,6 +32,12 @@ class createcardViewController: UIViewController{
     @IBAction func donebutton(_ sender: Any) {
         delegate?.passData(namelabelinfo: createname.text!)
         delegate?.companypassData(companylableinfo: createcompany.text!)
+        delegate?.titlepassData(titlelabelinfo: createtitle.text!)
+        delegate?.mobilepassData(mobilelabelinfo: createmobile.text!)
+        delegate?.emailpassData(emaillabelinfo: createemail.text!)
+        delegate?.addresspassData(addresslabelinfo: createaddress.text!)
+        delegate?.linepassData(linelabelinfo: createline.text!)
+        delegate?.fbpassData(fblabelinfo: createfb.text!)
         navigationController?.popViewController(animated: true)
         
     }
@@ -36,6 +49,12 @@ class createcardViewController: UIViewController{
         super.viewDidLoad()
         createname.text = namelableinfo
         createcompany.text = companylableinfo
+        createtitle.text = titlelabelinfo
+        createmobile.text = mobilelabelinfo
+        createemail.text = emaillabelinfo
+        createaddress.text = addresslabelinfo
+        createline.text = linelabelinfo
+        createfb.text = fblabelinfo
         
     }
     
@@ -45,4 +64,10 @@ class createcardViewController: UIViewController{
 protocol createcardViewControllerDelegate {
     func passData(namelabelinfo: String)
     func companypassData(companylableinfo: String)
+    func titlepassData(titlelabelinfo: String)
+    func mobilepassData(mobilelabelinfo: String)
+    func emailpassData(emaillabelinfo: String)
+    func addresspassData(addresslabelinfo: String)
+    func linepassData(linelabelinfo: String)
+    func fbpassData(fblabelinfo: String)
 }
