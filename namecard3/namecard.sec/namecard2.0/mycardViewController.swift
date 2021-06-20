@@ -43,10 +43,10 @@ class mycardViewController: UIViewController,UITableViewDelegate,UITableViewData
         mycell?.mycompany.text = mynamecard.company
         
         mycell?.myimageview?.image = UIImage(named: (mynamecard.image)!)
-        mycell?.myemail.text = mynamecard.email
+       // mycell?.myemail.text = mynamecard.email
         
-        mycell?.mymobile.text = mynamecard.mobile
-        mycell?.myaddress.text = mynamecard.address
+//        mycell?.mymobile.text = mynamecard.mobile
+//        mycell?.myaddress.text = mynamecard.address
         
         return mycell!
         
