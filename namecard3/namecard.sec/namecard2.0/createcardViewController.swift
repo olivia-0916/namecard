@@ -29,6 +29,7 @@ class createcardViewController: UIViewController{
     @IBOutlet weak var createaddress: UITextField!
     @IBOutlet weak var createline: UITextField!
     @IBOutlet weak var createfb: UITextField!
+    @IBOutlet weak var imagebutton: UIButton!
     
     @IBAction func donebutton(_ sender: Any) {
         
@@ -56,6 +57,10 @@ class createcardViewController: UIViewController{
         createaddress.text = addresslabelinfo
         createline.text = linelabelinfo
         createfb.text = fblabelinfo
+
+        
+        imagebutton.imageView?.contentMode = .scaleAspectFill
+        
 
     }
     
