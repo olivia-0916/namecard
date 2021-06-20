@@ -18,6 +18,7 @@ class cardinfoViewController: UIViewController,createcardViewControllerDelegate{
     var addresslabelinfo: String?
     var linelabelinfo: String?
     var fblabelinfo: String?
+    var imagelabelinfo: UIImage?
     
     
     @IBAction func gotocreat(_ sender: Any) {
@@ -67,6 +68,10 @@ class cardinfoViewController: UIViewController,createcardViewControllerDelegate{
         fbinfo.text = fblabelinfo
     }
     
+    func imagepassData(imagelabelinfo: UIImage){
+        imageinfo.image = imagelabelinfo
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -93,6 +98,8 @@ class cardinfoViewController: UIViewController,createcardViewControllerDelegate{
                 gotocreat.addresslabelinfo = addressinfo.text
                 gotocreat.linelabelinfo = lineinfo.text
                 gotocreat.fblabelinfo = fbinfo.text
+                
+                
                 
                 gotocreat.delegate = self
 

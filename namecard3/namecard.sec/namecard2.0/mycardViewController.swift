@@ -7,7 +7,10 @@
 
 import UIKit
 
+
 class mycardViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+
     
     var mynamecards : [Mycard] = []
     
@@ -16,6 +19,8 @@ class mycardViewController: UIViewController,UITableViewDelegate,UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         fetchData()
         mytableview.delegate = self
         mytableview.dataSource = self
@@ -23,7 +28,7 @@ class mycardViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 250
+        return 200
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -44,8 +49,7 @@ class mycardViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         mycell?.myimageview?.image = UIImage(named: (mynamecard.image)!)
        // mycell?.myemail.text = mynamecard.email
-        
-//        mycell?.mymobile.text = mynamecard.mobile
+        mycell?.mymobile.text = mynamecard.mobile
 //        mycell?.myaddress.text = mynamecard.address
         
         return mycell!
@@ -60,7 +64,7 @@ class mycardViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        //print(sender as? String)
+        
         switch segue.identifier {
         case "gotocaardinfo":
             let namecard = sender as? Mycard

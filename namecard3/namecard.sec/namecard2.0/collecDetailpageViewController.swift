@@ -7,9 +7,10 @@
 
 import UIKit
 
+
+
 class collecDetailpageViewController: UIViewController {
 
-    
     
     @IBOutlet weak var namelabel: UILabel!
     @IBOutlet weak var joblabel: UILabel!
@@ -20,6 +21,8 @@ class collecDetailpageViewController: UIViewController {
     @IBOutlet weak var addresslabel: UILabel!
     
     var namecard: Namecard?
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +36,11 @@ class collecDetailpageViewController: UIViewController {
         if let imageName = namecard?.photoimage {
             iamgeview.image = UIImage(named: imageName)
             
+        
+            
         }
+        
+        
         
     }
     override func didReceiveMemoryWarning() {
