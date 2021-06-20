@@ -179,7 +179,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="namelabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dw6-ZN-f9X">
-                                <rect key="frame" x="30" y="188" width="78.5" height="20.5"/>
+                                <rect key="frame" x="30" y="168" width="78.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -191,7 +191,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIM-Ja-TGn">
-                                <rect key="frame" x="30" y="259" width="70" height="20.5"/>
+                                <rect key="frame" x="30" y="289" width="70" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -200,19 +200,19 @@
                                 <rect key="frame" x="247" y="189" width="100" height="100"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJg-gk-Vbj">
-                                <rect key="frame" x="30" y="299.5" width="41" height="21"/>
+                                <rect key="frame" x="30" y="349.5" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G92-Ri-nGN">
-                                <rect key="frame" x="30" y="330.5" width="51" height="21"/>
+                                <rect key="frame" x="30" y="410.5" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2T5-L6-YsY">
-                                <rect key="frame" x="30" y="361.5" width="61" height="21"/>
+                                <rect key="frame" x="30" y="471.5" width="61" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -223,18 +223,18 @@
                         <constraints>
                             <constraint firstItem="2T5-L6-YsY" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="04T-AL-v6I"/>
                             <constraint firstItem="Dw6-ZN-f9X" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="2ic-Gf-thv"/>
-                            <constraint firstItem="MqM-ZV-Uc1" firstAttribute="top" secondItem="ZNb-iL-6Aj" secondAttribute="top" constant="110" id="7qz-r0-jYs"/>
-                            <constraint firstItem="LJg-gk-Vbj" firstAttribute="top" secondItem="LIM-Ja-TGn" secondAttribute="bottom" constant="20" id="CA2-S8-PwB"/>
-                            <constraint firstItem="G92-Ri-nGN" firstAttribute="top" secondItem="LJg-gk-Vbj" secondAttribute="bottom" constant="10" id="Fmf-7z-8Xn"/>
+                            <constraint firstItem="MqM-ZV-Uc1" firstAttribute="top" secondItem="ZNb-iL-6Aj" secondAttribute="top" constant="70" id="7qz-r0-jYs"/>
+                            <constraint firstItem="LJg-gk-Vbj" firstAttribute="top" secondItem="LIM-Ja-TGn" secondAttribute="bottom" constant="40" id="CA2-S8-PwB"/>
+                            <constraint firstItem="G92-Ri-nGN" firstAttribute="top" secondItem="LJg-gk-Vbj" secondAttribute="bottom" constant="40" id="Fmf-7z-8Xn"/>
                             <constraint firstItem="LIM-Ja-TGn" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="MZT-C7-Wur"/>
-                            <constraint firstItem="Dw6-ZN-f9X" firstAttribute="top" secondItem="ZNb-iL-6Aj" secondAttribute="top" constant="100" id="PG5-EH-rsV"/>
+                            <constraint firstItem="Dw6-ZN-f9X" firstAttribute="top" secondItem="ZNb-iL-6Aj" secondAttribute="top" constant="80" id="PG5-EH-rsV"/>
                             <constraint firstItem="LJg-gk-Vbj" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="Qf1-4v-WMr"/>
                             <constraint firstItem="G92-Ri-nGN" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="aEV-jk-STA"/>
-                            <constraint firstItem="2T5-L6-YsY" firstAttribute="top" secondItem="G92-Ri-nGN" secondAttribute="bottom" constant="10" id="aJd-av-tvR"/>
-                            <constraint firstItem="LIM-Ja-TGn" firstAttribute="top" secondItem="JXl-qg-f5Q" secondAttribute="bottom" constant="10" id="jYX-Fo-kjm"/>
+                            <constraint firstItem="2T5-L6-YsY" firstAttribute="top" secondItem="G92-Ri-nGN" secondAttribute="bottom" constant="40" id="aJd-av-tvR"/>
+                            <constraint firstItem="LIM-Ja-TGn" firstAttribute="top" secondItem="JXl-qg-f5Q" secondAttribute="bottom" constant="40" id="jYX-Fo-kjm"/>
                             <constraint firstItem="JXl-qg-f5Q" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="lLZ-bg-fXe"/>
                             <constraint firstItem="ZNb-iL-6Aj" firstAttribute="trailing" secondItem="MqM-ZV-Uc1" secondAttribute="trailing" constant="30" id="nzf-GZ-Vxg"/>
-                            <constraint firstItem="JXl-qg-f5Q" firstAttribute="top" secondItem="Dw6-ZN-f9X" secondAttribute="bottom" constant="20" id="pBz-hv-yQx"/>
+                            <constraint firstItem="JXl-qg-f5Q" firstAttribute="top" secondItem="Dw6-ZN-f9X" secondAttribute="bottom" constant="40" id="pBz-hv-yQx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5NZ-az-hJ0"/>
@@ -778,7 +778,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mOa-By-a6S"/>
+        <segue reference="MmY-0E-Izv"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="100" height="100"/>
