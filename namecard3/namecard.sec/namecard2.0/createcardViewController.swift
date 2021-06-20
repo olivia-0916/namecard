@@ -28,6 +28,7 @@ class createcardViewController: UIViewController{
     @IBOutlet weak var createaddress: UITextField!
     @IBOutlet weak var createline: UITextField!
     @IBOutlet weak var createfb: UITextField!
+    @IBOutlet weak var imagebutton: UIButton!
     
     @IBAction func donebutton(_ sender: Any) {
         delegate?.passData(namelabelinfo: createname.text!)
@@ -56,11 +57,16 @@ class createcardViewController: UIViewController{
         createline.text = linelabelinfo
         createfb.text = fblabelinfo
         
+        imagebutton.imageView?.contentMode = .scaleAspectFill
+        
     }
     
 
 
 }
+
+
+
 protocol createcardViewControllerDelegate {
     func passData(namelabelinfo: String)
     func companypassData(companylableinfo: String)
