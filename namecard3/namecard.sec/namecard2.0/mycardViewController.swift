@@ -9,7 +9,7 @@ import UIKit
 
 class mycardViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    var mynamecards : [Namecard] = []
+    var mynamecards : [Mycard] = []
     
     @IBOutlet weak var mytableview: UITableView!
     
@@ -39,10 +39,10 @@ class mycardViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         let mynamecard = mynamecards[indexPath.row]
         mycell?.mylabel.text = mynamecard.name
-        mycell?.myjob.text = mynamecard.job
+        mycell?.myjob.text = mynamecard.title
         mycell?.mycompany.text = mynamecard.company
         
-        mycell?.myimageview?.image = UIImage(named: (mynamecard.photoimage)!)
+        mycell?.myimageview?.image = UIImage(named: (mynamecard.image)!)
         mycell?.myemail.text = mynamecard.email
         
         mycell?.mymobile.text = mynamecard.mobile
@@ -63,7 +63,7 @@ class mycardViewController: UIViewController,UITableViewDelegate,UITableViewData
         //print(sender as? String)
         switch segue.identifier {
         case "gotocaardinfo":
-            let namecard = sender as? Namecard
+            let namecard = sender as? Mycard
             if let cardinfoViewController = segue.destination as?
             cardinfoViewController{
                 cardinfoViewController.infonamecard = namecard
@@ -74,32 +74,19 @@ class mycardViewController: UIViewController,UITableViewDelegate,UITableViewData
 
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//        switch segue.identifier {
-//        case "gotocardinfo":
-//            let namecard = sender as? Namecard
-//            if let cardinfoViewController = segue.destination as? cardinfoViewController{
-//                cardinfoViewController.namecards = namecard
-//
-//            }
-//        default:
-//            break
-//        }
-//
-//    }
 
 }
 
 extension mycardViewController {
 private func fetchData() {
-    guard let path = Bundle.main.path(forResource: "Namecards", ofType: "plist"),
+    guard let path = Bundle.main.path(forResource: "mycard", ofType: "plist"),
           let xml = FileManager.default.contents(atPath: path),
-          let namecards = try? PropertyListDecoder().decode([Namecard].self, from: xml) else {
+          let namecards = try? PropertyListDecoder().decode([Mycard].self, from: xml) else {
         return
     }
     
     self.mynamecards = namecards
+    
     mytableview.reloadData()
 
 }

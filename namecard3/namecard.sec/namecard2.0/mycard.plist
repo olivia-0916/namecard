@@ -4,9 +4,41 @@
 <array>
 	<dict>
 		<key>image</key>
-		<string></string>
+		<string>A1</string>
 		<key>name</key>
-		<string>Kay Chen</string>
+		<string>Arina</string>
+		<key>company</key>
+		<string>BigBro</string>
+		<key>title</key>
+		<string>Sales</string>
+		<key>mobile</key>
+		<string>0922222222</string>
+		<key>email</key>
+		<string>kaykk@mail.com</string>
+		<key>address</key>
+		<string>1, 23 Lane, RR Street, WD District, OO City</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>A2</string>
+		<key>name</key>
+		<string>Arina</string>
+		<key>company</key>
+		<string>BigBro</string>
+		<key>title</key>
+		<string>Sales</string>
+		<key>mobile</key>
+		<string>0922222222</string>
+		<key>email</key>
+		<string>kaykk@mail.com</string>
+		<key>address</key>
+		<string>1, 23 Lane, RR Street, WD District, OO City</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>A3</string>
+		<key>name</key>
+		<string>Arina</string>
 		<key>company</key>
 		<string>BigBro</string>
 		<key>title</key>
@@ -22,6 +54,5 @@
 		<key>fb</key>
 		<string>kaykk</string>
 	</dict>
-	<dict/>
 </array>
 </plist>

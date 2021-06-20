@@ -33,7 +33,8 @@ class cardinfoViewController: UIViewController,createcardViewControllerDelegate{
     @IBOutlet weak var fbinfo: UILabel!
     @IBOutlet weak var imageinfo: UIImageView!
     
-    var infonamecard: Namecard?
+    var infonamecard: Mycard?
+    
     
     func passData(namelabelinfo: String) {
         nameinfo.text = namelabelinfo
@@ -71,13 +72,13 @@ class cardinfoViewController: UIViewController,createcardViewControllerDelegate{
         
         nameinfo.text = infonamecard?.name
         companyinfo.text = infonamecard?.company
-        titleinfo.text = infonamecard?.job
+        titleinfo.text = infonamecard?.title
         mobileinfo.text = infonamecard?.mobile
         emailinfo.text = infonamecard?.email
         addressinfo.text = infonamecard?.address
         lineinfo.text = infonamecard?.email
         fbinfo.text = infonamecard?.name
-        if let imageName = infonamecard?.photoimage {
+        if let imageName = infonamecard?.image {
             imageinfo.image = UIImage(named: imageName)
     }
 }
