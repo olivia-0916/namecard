@@ -12,6 +12,7 @@
 		0407EDF32674DD0B0063014A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0407EDF12674DD0B0063014A /* Main.storyboard */; };
 		0407EDF52674DD0E0063014A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0407EDF42674DD0E0063014A /* Assets.xcassets */; };
 		0407EDF82674DD0E0063014A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0407EDF62674DD0E0063014A /* LaunchScreen.storyboard */; };
+		045F30BD267F394600519206 /* Mynamecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F30BC267F394600519206 /* Mynamecard.swift */; };
 		048205B22674DFA2006D26C9 /* Namecards.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048205B12674DFA2006D26C9 /* Namecards.plist */; };
 		049E7EAC26766B3B000BBDCE /* Namecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E7EAB26766B3B000BBDCE /* Namecard.swift */; };
 		049E7EB326767045000BBDCE /* cardcollecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E7EB226767045000BBDCE /* cardcollecViewController.swift */; };
@@ -35,6 +36,7 @@
 		0407EDF42674DD0E0063014A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0407EDF72674DD0E0063014A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0407EDF92674DD0E0063014A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045F30BC267F394600519206 /* Mynamecard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mynamecard.swift; sourceTree = "<group>"; };
 		048205B12674DFA2006D26C9 /* Namecards.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Namecards.plist; sourceTree = "<group>"; };
 		049E7EAB26766B3B000BBDCE /* Namecard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namecard.swift; sourceTree = "<group>"; };
 		049E7EB226767045000BBDCE /* cardcollecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardcollecViewController.swift; sourceTree = "<group>"; };
@@ -86,11 +88,12 @@
 				049E7EBA26767646000BBDCE /* collecDetailpageViewController.swift */,
 				BE920CB6267B3D3600BEC18E /* cardinfoViewController.swift */,
 				BE920CBA267B42D900BEC18E /* createcardViewController.swift */,
-				0A77192E267883DD00A8D339 /* changePhotoPageViewController.swift */,
 				BE2010122679E2830005033D /* mycardViewController.swift */,
 				BED23BB22677B1EE0049DA39 /* mycardTableViewCell.swift */,
 				049E7EAB26766B3B000BBDCE /* Namecard.swift */,
+				045F30BC267F394600519206 /* Mynamecard.swift */,
 				0407EDF12674DD0B0063014A /* Main.storyboard */,
+				0A77192E267883DD00A8D339 /* changePhotoPageViewController.swift */,
 				0407EDF42674DD0E0063014A /* Assets.xcassets */,
 				0407EDF62674DD0E0063014A /* LaunchScreen.storyboard */,
 				048205B12674DFA2006D26C9 /* Namecards.plist */,
@@ -180,6 +183,7 @@
 				BED23BB32677B1EE0049DA39 /* mycardTableViewCell.swift in Sources */,
 				BE2010132679E2830005033D /* mycardViewController.swift in Sources */,
 				BE920CB7267B3D3600BEC18E /* cardinfoViewController.swift in Sources */,
+				045F30BD267F394600519206 /* Mynamecard.swift in Sources */,
 				0A77192F267883DD00A8D339 /* changePhotoPageViewController.swift in Sources */,
 				0407EDEE2674DD0B0063014A /* SceneDelegate.swift in Sources */,
 				049E7EBB26767646000BBDCE /* collecDetailpageViewController.swift in Sources */,
