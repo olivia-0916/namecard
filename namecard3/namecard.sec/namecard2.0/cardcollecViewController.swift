@@ -25,7 +25,7 @@ class cardcollecViewController: UIViewController,UITableViewDelegate,UITableView
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 250
+        return 200
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,9 +42,9 @@ class cardcollecViewController: UIViewController,UITableViewDelegate,UITableView
         let namecard = namecards[indexPath.row]
 
         cell?.namelable.text = namecard.name
+        cell?.mobilelabel.text = namecard.mobile
         cell?.joblable.text = namecard.job
         cell?.companylable.text = namecard.company
-        
         cell?.imageview.image = UIImage(named: (namecard.photoimage)!)
 
         return cell!
