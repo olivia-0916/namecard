@@ -41,9 +41,10 @@ class cardcollecViewController: UIViewController,UITableViewDelegate,UITableView
         
         let namecard = namecards[indexPath.row]
 
-        cell?.namelabel.text = namecard.name
-        cell?.joblabel.text = namecard.job
-        cell?.companylabel.text = namecard.company
+        cell?.namelable.text = namecard.name
+        cell?.joblable.text = namecard.job
+        cell?.companylable.text = namecard.company
+        
         cell?.imageview.image = UIImage(named: (namecard.photoimage)!)
 
         return cell!

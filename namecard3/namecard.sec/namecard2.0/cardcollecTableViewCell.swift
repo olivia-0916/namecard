@@ -11,9 +11,9 @@ class cardcollecTableViewCell: UITableViewCell {
 
     
     @IBOutlet weak var imageview: UIImageView!
-    @IBOutlet weak var namelabel: UILabel!
-    @IBOutlet weak var joblabel: UILabel!
-    @IBOutlet weak var companylabel: UILabel!
+    @IBOutlet weak var namelable: UILabel!
+    @IBOutlet weak var joblable: UILabel!
+    @IBOutlet weak var companylable: UILabel!
     
     
     

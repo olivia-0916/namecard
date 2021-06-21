@@ -12,14 +12,17 @@ import UIKit
 class collecDetailpageViewController: UIViewController {
 
     
-    @IBOutlet weak var namelabel: UILabel!
-    @IBOutlet weak var joblabel: UILabel!
-    @IBOutlet weak var companylabel: UILabel!
+    @IBOutlet weak var namelable: UILabel!
+    @IBOutlet weak var joblable: UILabel!
+    @IBOutlet weak var companylable: UILabel!
     @IBOutlet weak var iamgeview: UIImageView!
-    @IBOutlet weak var emaillabel: UILabel!
-    @IBOutlet weak var mobilelabel: UILabel!
-    @IBOutlet weak var addresslabel: UILabel!
+    @IBOutlet weak var emaillable: UILabel!
+    @IBOutlet weak var mobilelable: UILabel!
+    @IBOutlet weak var addresslable: UILabel!
     
+    @IBOutlet weak var linelable: UILabel!
+    
+    @IBOutlet weak var fblable: UILabel!
     var namecard: Namecard?
     
     
@@ -27,12 +30,15 @@ class collecDetailpageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        namelabel.text = namecard?.name
-        joblabel.text = namecard?.job
-        companylabel.text = namecard?.company
-        emaillabel.text = namecard?.email
-        mobilelabel.text = namecard?.mobile
-        addresslabel.text = namecard?.address
+        namelable.text = namecard?.name
+        joblable.text = namecard?.job
+        companylable.text = namecard?.company
+        emaillable.text = namecard?.email
+        mobilelable.text = namecard?.mobile
+        addresslable.text = namecard?.address
+        linelable.text = namecard?.line
+        fblable.text = namecard?.fb
+        
         if let imageName = namecard?.photoimage {
             iamgeview.image = UIImage(named: imageName)
             

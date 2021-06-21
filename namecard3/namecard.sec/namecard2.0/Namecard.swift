@@ -15,4 +15,6 @@ struct Namecard: Decodable {
     var address: String
     var mobile: String
     var photoimage: String?
+    var line: String
+    var fb: String
 }

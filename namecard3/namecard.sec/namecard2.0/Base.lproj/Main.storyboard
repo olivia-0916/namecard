@@ -157,10 +157,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="companylabel" destination="vJF-QC-HA6" id="9VF-Ss-cdr"/>
+                                            <outlet property="companylable" destination="vJF-QC-HA6" id="9VF-Ss-cdr"/>
                                             <outlet property="imageview" destination="KiH-w5-LiE" id="V0j-3V-zeC"/>
-                                            <outlet property="joblabel" destination="aIX-2U-ndI" id="yfd-95-3lH"/>
-                                            <outlet property="namelabel" destination="0Yv-id-Lao" id="UbM-Vs-ZBL"/>
+                                            <outlet property="joblable" destination="aIX-2U-ndI" id="yfd-95-3lH"/>
+                                            <outlet property="namelable" destination="0Yv-id-Lao" id="UbM-Vs-ZBL"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -232,11 +232,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5G-9I-gS3">
+                                <rect key="frame" x="30" y="532.5" width="27" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTu-PE-AKR">
+                                <rect key="frame" x="30" y="593.5" width="16" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZNb-iL-6Aj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2T5-L6-YsY" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="04T-AL-v6I"/>
+                            <constraint firstItem="lTu-PE-AKR" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="1zQ-W8-V1f"/>
                             <constraint firstItem="Dw6-ZN-f9X" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="2ic-Gf-thv"/>
                             <constraint firstItem="MqM-ZV-Uc1" firstAttribute="top" secondItem="ZNb-iL-6Aj" secondAttribute="top" constant="70" id="7qz-r0-jYs"/>
                             <constraint firstItem="LJg-gk-Vbj" firstAttribute="top" secondItem="LIM-Ja-TGn" secondAttribute="bottom" constant="40" id="CA2-S8-PwB"/>
@@ -246,21 +259,26 @@
                             <constraint firstItem="LJg-gk-Vbj" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="Qf1-4v-WMr"/>
                             <constraint firstItem="G92-Ri-nGN" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="aEV-jk-STA"/>
                             <constraint firstItem="2T5-L6-YsY" firstAttribute="top" secondItem="G92-Ri-nGN" secondAttribute="bottom" constant="40" id="aJd-av-tvR"/>
+                            <constraint firstItem="lTu-PE-AKR" firstAttribute="top" secondItem="v5G-9I-gS3" secondAttribute="bottom" constant="40" id="iBh-BO-Wkj"/>
                             <constraint firstItem="LIM-Ja-TGn" firstAttribute="top" secondItem="JXl-qg-f5Q" secondAttribute="bottom" constant="40" id="jYX-Fo-kjm"/>
                             <constraint firstItem="JXl-qg-f5Q" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="lLZ-bg-fXe"/>
                             <constraint firstItem="ZNb-iL-6Aj" firstAttribute="trailing" secondItem="MqM-ZV-Uc1" secondAttribute="trailing" constant="30" id="nzf-GZ-Vxg"/>
                             <constraint firstItem="JXl-qg-f5Q" firstAttribute="top" secondItem="Dw6-ZN-f9X" secondAttribute="bottom" constant="40" id="pBz-hv-yQx"/>
+                            <constraint firstItem="v5G-9I-gS3" firstAttribute="leading" secondItem="ZNb-iL-6Aj" secondAttribute="leading" constant="30" id="uwT-ld-xMW"/>
+                            <constraint firstItem="v5G-9I-gS3" firstAttribute="top" secondItem="2T5-L6-YsY" secondAttribute="bottom" constant="40" id="xAx-5i-Z3b"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5NZ-az-hJ0"/>
                     <connections>
-                        <outlet property="addresslabel" destination="2T5-L6-YsY" id="M3C-GH-QVd"/>
-                        <outlet property="companylabel" destination="LIM-Ja-TGn" id="6pa-A1-LRz"/>
-                        <outlet property="emaillabel" destination="LJg-gk-Vbj" id="FHz-2E-boT"/>
+                        <outlet property="addresslable" destination="2T5-L6-YsY" id="M3C-GH-QVd"/>
+                        <outlet property="companylable" destination="LIM-Ja-TGn" id="6pa-A1-LRz"/>
+                        <outlet property="emaillable" destination="LJg-gk-Vbj" id="FHz-2E-boT"/>
+                        <outlet property="fblable" destination="lTu-PE-AKR" id="z4y-cE-wqX"/>
                         <outlet property="iamgeview" destination="MqM-ZV-Uc1" id="hIk-Ri-2oB"/>
-                        <outlet property="joblabel" destination="JXl-qg-f5Q" id="eSy-ll-kCO"/>
-                        <outlet property="mobilelabel" destination="G92-Ri-nGN" id="NGL-eX-iGb"/>
-                        <outlet property="namelabel" destination="Dw6-ZN-f9X" id="uT8-Ew-VQU"/>
+                        <outlet property="joblable" destination="JXl-qg-f5Q" id="eSy-ll-kCO"/>
+                        <outlet property="linelable" destination="v5G-9I-gS3" id="w9S-pe-uIn"/>
+                        <outlet property="mobilelable" destination="G92-Ri-nGN" id="NGL-eX-iGb"/>
+                        <outlet property="namelable" destination="Dw6-ZN-f9X" id="uT8-Ew-VQU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ikH-Qe-9Iw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
