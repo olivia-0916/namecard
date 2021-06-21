@@ -4,9 +4,9 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>John</string>
+		<string>Katrina</string>
 		<key>job</key>
-		<string>PM</string>
+		<string>Accountant</string>
 		<key>company</key>
 		<string>Quick Tech</string>
 		<key>email</key>
@@ -17,14 +17,18 @@
 		<string>1, 23 Lane, RR Street, WD District, OO City</string>
 		<key>photoimage</key>
 		<string>0</string>
+		<key>line</key>
+		<string>kkatrinaday</string>
+		<key>fb</key>
+		<string>Katrina Miller</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Sam</string>
 		<key>job</key>
-		<string>Cop</string>
+		<string>Repoter</string>
 		<key>company</key>
-		<string>Quick Tech</string>
+		<string>Three Apple</string>
 		<key>email</key>
 		<string>yuxuanlin599@gmail</string>
 		<key>mobile</key>
@@ -33,12 +37,16 @@
 		<string>1, 23 Lane, RR Street, WD District, OO City</string>
 		<key>photoimage</key>
 		<string>1</string>
+		<key>line</key>
+		<string>Samshere</string>
+		<key>fb</key>
+		<string>Sam Smith</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Lee</string>
 		<key>job</key>
-		<string>PM</string>
+		<string>Product Manager</string>
 		<key>company</key>
 		<string>Quick Tech</string>
 		<key>email</key>
@@ -49,12 +57,16 @@
 		<string>1, 23 Lane, RR Street, WD District, OO City</string>
 		<key>photoimage</key>
 		<string>2</string>
+		<key>line</key>
+		<string>leecomes</string>
+		<key>fb</key>
+		<string>Lee Quick</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>jackson</string>
+		<string>Cecilia</string>
 		<key>job</key>
-		<string>designer</string>
+		<string>UI</string>
 		<key>company</key>
 		<string>Quick Tech</string>
 		<key>email</key>
@@ -65,6 +77,10 @@
 		<string>1, 23 Lane, RR Street, WD District, OO City</string>
 		<key>photoimage</key>
 		<string>3</string>
+		<key>line</key>
+		<string>Cecilialine</string>
+		<key>fb</key>
+		<string>Cecilia Moore</string>
 	</dict>
 </array>
 </plist>

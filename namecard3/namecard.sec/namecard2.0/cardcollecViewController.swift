@@ -40,9 +40,7 @@ class cardcollecViewController: UIViewController,UITableViewDelegate,UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "cardcollecTableViewCell", for: indexPath) as?cardcollecTableViewCell
         
         let namecard = namecards[indexPath.row]
-//        cell?.addresslabel.text = namecard.address
-//        cell?.emaillabel.text = namecard.email
-//        cell?.mobilelabel.text = namecard.mobile
+
         cell?.namelabel.text = namecard.name
         cell?.joblabel.text = namecard.job
         cell?.companylabel.text = namecard.company
