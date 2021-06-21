@@ -14,7 +14,6 @@ class cardcollecTableViewCell: UITableViewCell {
     @IBOutlet weak var namelable: UILabel!
     @IBOutlet weak var joblable: UILabel!
     @IBOutlet weak var companylable: UILabel!
-    
     @IBOutlet weak var mobilelabel: UILabel!
     
     

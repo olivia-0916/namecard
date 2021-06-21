@@ -16,5 +16,5 @@ struct Namecard: Decodable {
     var mobile: String
     var photoimage: String?
     var line: String
-    var fb: String
+    var fb: String?
 }
