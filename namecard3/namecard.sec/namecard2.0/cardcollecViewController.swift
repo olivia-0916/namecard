@@ -12,6 +12,12 @@ class cardcollecViewController: UIViewController,UITableViewDelegate,UITableView
     
     var namecards : [Namecard] = []
     
+    
+  
+    
+    
+    
+    
     @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
@@ -51,10 +57,11 @@ class cardcollecViewController: UIViewController,UITableViewDelegate,UITableView
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
           let namecard = namecards[indexPath.row]
-     
+
          performSegue(withIdentifier: "gotocollecdetailpage", sender: namecard)
      }
      
+    
      
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
          
