@@ -23,6 +23,7 @@
 		BE2010132679E2830005033D /* mycardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2010122679E2830005033D /* mycardViewController.swift */; };
 		BE920CB7267B3D3600BEC18E /* cardinfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE920CB6267B3D3600BEC18E /* cardinfoViewController.swift */; };
 		BE920CBB267B42D900BEC18E /* createcardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE920CBA267B42D900BEC18E /* createcardViewController.swift */; };
+		BEACFD2D268342D500074FBF /* mainUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEACFD2C268342D500074FBF /* mainUITabBarController.swift */; };
 		BED23BAD2677B0AD0049DA39 /* mycard.plist in Resources */ = {isa = PBXBuildFile; fileRef = BED23BAC2677B0AD0049DA39 /* mycard.plist */; };
 		BED23BB32677B1EE0049DA39 /* mycardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED23BB22677B1EE0049DA39 /* mycardTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		BE2010122679E2830005033D /* mycardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mycardViewController.swift; sourceTree = "<group>"; };
 		BE920CB6267B3D3600BEC18E /* cardinfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardinfoViewController.swift; sourceTree = "<group>"; };
 		BE920CBA267B42D900BEC18E /* createcardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createcardViewController.swift; sourceTree = "<group>"; };
+		BEACFD2C268342D500074FBF /* mainUITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainUITabBarController.swift; sourceTree = "<group>"; };
 		BED23BAC2677B0AD0049DA39 /* mycard.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = mycard.plist; sourceTree = "<group>"; };
 		BED23BB22677B1EE0049DA39 /* mycardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mycardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +95,7 @@
 				049E7EAB26766B3B000BBDCE /* Namecard.swift */,
 				045F30BC267F394600519206 /* Mynamecard.swift */,
 				0407EDF12674DD0B0063014A /* Main.storyboard */,
+				BEACFD2C268342D500074FBF /* mainUITabBarController.swift */,
 				0A77192E267883DD00A8D339 /* changePhotoPageViewController.swift */,
 				0407EDF42674DD0E0063014A /* Assets.xcassets */,
 				0407EDF62674DD0E0063014A /* LaunchScreen.storyboard */,
@@ -181,6 +184,7 @@
 				0407EDF02674DD0B0063014A /* ViewController.swift in Sources */,
 				BE920CBB267B42D900BEC18E /* createcardViewController.swift in Sources */,
 				BED23BB32677B1EE0049DA39 /* mycardTableViewCell.swift in Sources */,
+				BEACFD2D268342D500074FBF /* mainUITabBarController.swift in Sources */,
 				BE2010132679E2830005033D /* mycardViewController.swift in Sources */,
 				BE920CB7267B3D3600BEC18E /* cardinfoViewController.swift in Sources */,
 				045F30BD267F394600519206 /* Mynamecard.swift in Sources */,
