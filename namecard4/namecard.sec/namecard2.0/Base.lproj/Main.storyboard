@@ -661,21 +661,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KdE-Od-OSB">
-                                <rect key="frame" x="87" y="208" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNr-pC-9jk">
+                                <rect key="frame" x="157" y="211" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2nZ-gt-gEz"/>
+                                    <constraint firstAttribute="width" constant="100" id="nk1-qQ-mXl"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="0"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="5Of-i3-AbC" appends="YES" id="37T-J9-nOi"/>
+                                    <action selector="imageChange:" destination="FCE-4c-dHV" eventType="touchUpInside" id="Sp0-NS-9us"/>
                                 </connections>
-                            </imageView>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qz5-Ae-Imz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.88350212569999997" green="0.89402955770000003" blue="0.85911780599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FNr-pC-9jk" firstAttribute="centerX" secondItem="qz5-Ae-Imz" secondAttribute="centerX" id="RBP-N7-Yer"/>
+                            <constraint firstItem="FNr-pC-9jk" firstAttribute="top" secondItem="qz5-Ae-Imz" secondAttribute="top" constant="123" id="nva-ct-AQ1"/>
+                            <constraint firstItem="qz5-Ae-Imz" firstAttribute="bottom" secondItem="FNr-pC-9jk" secondAttribute="bottom" constant="453" id="zDr-fa-9yT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nyI-8Q-2vT"/>
                     <connections>
-                        <outlet property="photoImageView" destination="KdE-Od-OSB" id="uyq-9R-Il0"/>
+                        <outlet property="changeButton" destination="FNr-pC-9jk" id="601-M7-ewu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fm-hX-W5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -685,7 +693,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5748" y="-1231"/>
+            <point key="canvasLocation" x="5747.826086956522" y="-1231.4732142857142"/>
         </scene>
         <!--pickasong-->
         <scene sceneID="g84-Zz-EaY">
