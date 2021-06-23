@@ -8,9 +8,9 @@
 import UIKit
 
 class changePhotoPageViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+
     
-    @IBOutlet weak var photoImageView: UIImageView!
-    
+    @IBOutlet weak var changeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,10 +29,9 @@ class changePhotoPageViewController: UIViewController,UIImagePickerControllerDel
         cameraController.sourceType = .camera
         present(cameraController, animated: true, completion: nil)
     }
-   // func imagePickerController(_ picker: UIImagePickerController,)}
+   
     
-    //點擊
-    @IBAction func pickPhotoImageView(_ sender: UITapGestureRecognizer) {
+    @IBAction func imageChange(_ sender: UIButton) {
         let controller = UIAlertController(title: "選擇相片", message: nil, preferredStyle: .actionSheet)
         //相機
         let cameraAction = UIAlertAction(title:"開啟相機", style: .default){(_) in
@@ -50,6 +49,15 @@ class changePhotoPageViewController: UIViewController,UIImagePickerControllerDel
         controller.addAction(cancelAction)
         present(controller, animated: true, completion: nil)
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.originalImage] as? UIImage
+        changeButton.setImage(image, for: .normal)
+        dismiss(animated: true, completion: nil)
+    }
+    
+    //暫存，不用
+    //@IBAction func pickPhotoImageView(_ sender: UITapGestureRecognizer) {}
     
     
 
