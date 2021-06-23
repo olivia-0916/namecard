@@ -23,7 +23,12 @@ class createcardViewController: UIViewController{
     
     @IBAction func donebutton(_ sender: Any) {
         namecard?.name = createname.text!
-        // to do...
+        namecard?.company = createcompany.text!
+        namecard?.title = createtitle.text!
+        namecard?.address = createaddress.text!
+        namecard?.email = createemail.text!
+        namecard?.mobile = createmobile.text!
+        
         
 //        createcompany.text = namecard?.company
 //        createtitle.text = namecard?.title

@@ -27,6 +27,7 @@ class cardinfoViewController: UIViewController, createcardViewControllerDelegate
     
     @IBAction func gotocreat(_ sender: Any) {
         performSegue(withIdentifier: "infotocreate", sender: self)
+
     }
     
     @IBOutlet weak var nameinfo: UILabel!
