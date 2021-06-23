@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GqY-e5-lCL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GqY-e5-lCL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,7 +22,7 @@
                                 <color key="sectionIndexBackgroundColor" red="0.62773060800000002" green="0.67858749630000004" blue="0.66666680570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mycardTableViewCell" rowHeight="200" id="CrG-Pz-8aM" customClass="mycardTableViewCell" customModule="namecard2_0" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="200"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CrG-Pz-8aM" id="0xi-vf-ygf">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -118,7 +118,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cardcollecTableViewCell" rowHeight="200" id="6Dp-8Y-gCU" customClass="cardcollecTableViewCell" customModule="namecard2_0" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="200"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Dp-8Y-gCU" id="yNe-pQ-ynO">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -679,7 +679,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bIV-8u-cm7">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bIV-8u-cm7" id="PI3-u6-OaW">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -698,15 +698,17 @@
             </objects>
             <point key="canvasLocation" x="5748" y="-348"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--MainUI Tab Bar Controller-->
         <scene sceneID="XWO-LO-oaF">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="GqY-e5-lCL" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="GqY-e5-lCL" customClass="mainUITabBarController" customModule="namecard2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EQZ-ma-zA8">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="linkColor"/>
+                        <color key="selectedImageTintColor" systemColor="linkColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="ZNg-gf-wdr" kind="relationship" relationship="viewControllers" id="6wI-hN-n65"/>
@@ -717,11 +719,15 @@
             </objects>
             <point key="canvasLocation" x="19" y="387"/>
         </scene>
-        <!--123-->
+        <!--我的名片-->
         <scene sceneID="EmN-aS-Lw7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZNg-gf-wdr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="123" id="QKm-Vj-dq7"/>
+                    <tabBarItem key="tabBarItem" title="我的名片" image="card" selectedImage="card" id="QKm-Vj-dq7">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-3"/>
+                        <color key="badgeColor" systemColor="linkColor"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DWX-WM-66n">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -736,11 +742,13 @@
             </objects>
             <point key="canvasLocation" x="1153.6231884057972" y="-208.25892857142856"/>
         </scene>
-        <!--人脈-->
+        <!--我的人脈-->
         <scene sceneID="GgP-It-dyJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ims-rg-01Q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="人脈" selectedImage="hand" id="HoP-5O-pVq">
+                    <tabBarItem key="tabBarItem" title="我的人脈" image="hand" selectedImage="hand" id="HoP-5O-pVq">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-2"/>
+                        <color key="badgeColor" red="0.27483326200000002" green="0.46528553960000002" blue="0.93337887529999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -976,7 +984,11 @@
     <resources>
         <image name="0" width="100" height="100"/>
         <image name="1" width="100" height="100"/>
-        <image name="hand" width="256" height="256"/>
+        <image name="card" width="42" height="42"/>
+        <image name="hand" width="36" height="23"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
