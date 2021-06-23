@@ -21,6 +21,7 @@ class collecDetailpageViewController: UIViewController {
     @IBOutlet weak var addresslabel: UILabel!
     @IBOutlet weak var linelabel: UILabel!
     @IBOutlet weak var fblabel: UILabel!
+    @IBOutlet weak var detailview: UIView!
     
 
     var namecard: Namecard?
@@ -28,6 +29,8 @@ class collecDetailpageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        detailview.layer.cornerRadius = 25
         
         namelabel.text = namecard?.name
         joblabel.text = namecard?.job
