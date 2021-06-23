@@ -16,6 +16,12 @@ class mycardViewController: UIViewController,
     
     @IBOutlet weak var mytableview: UITableView!
     
+    @IBAction func newcard(_ sender: Any) {
+        performSegue(withIdentifier: "gotocreatecard", sender: self)
+    }
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

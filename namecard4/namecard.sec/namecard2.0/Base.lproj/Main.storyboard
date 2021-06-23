@@ -94,7 +94,18 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RTu-Km-vBt" secondAttribute="trailing" id="biG-Re-HXh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hIE-VZ-Azg"/>
+                    <navigationItem key="navigationItem" id="hIE-VZ-Azg">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="KJI-Bp-zOc">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Aqe-9F-1mb">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="新增"/>
+                            </button>
+                            <connections>
+                                <action selector="newcard:" destination="BYZ-38-t0r" id="FIh-ht-NVU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mytableview" destination="RTu-Km-vBt" id="jx3-r2-1dF"/>
                         <segue destination="aBW-pF-9SM" kind="show" identifier="gotocaardinfo" id="kf8-hx-Tvz"/>
