@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GqY-e5-lCL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GqY-e5-lCL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,7 +22,7 @@
                                 <color key="sectionIndexBackgroundColor" red="0.62773060800000002" green="0.67858749630000004" blue="0.66666680570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mycardTableViewCell" rowHeight="200" id="CrG-Pz-8aM" customClass="mycardTableViewCell" customModule="namecard2_0" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="200"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CrG-Pz-8aM" id="0xi-vf-ygf">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -118,7 +118,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cardcollecTableViewCell" rowHeight="200" id="6Dp-8Y-gCU" customClass="cardcollecTableViewCell" customModule="namecard2_0" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="200"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Dp-8Y-gCU" id="yNe-pQ-ynO">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -593,7 +593,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LOb-px-CJL"/>
-                        <color key="backgroundColor" red="0.86788107299999995" green="0.87896722559999996" blue="0.84313440319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.88350212569999997" green="0.89402955770000003" blue="0.85911780599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="LOb-px-CJL" firstAttribute="trailing" secondItem="XJT-8j-il1" secondAttribute="trailing" constant="50" id="3Eh-b4-Cif"/>
                             <constraint firstItem="LOb-px-CJL" firstAttribute="trailing" secondItem="gkM-bM-N4M" secondAttribute="trailing" constant="50" id="3si-fk-1zU"/>
@@ -643,21 +643,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KdE-Od-OSB">
-                                <rect key="frame" x="87" y="208" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m49-yp-Hk2" userLabel="buttonImage">
+                                <rect key="frame" x="157" y="221" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QzR-1x-8pz"/>
+                                    <constraint firstAttribute="height" constant="100" id="kev-wN-2K7"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="1"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="5Of-i3-AbC" appends="YES" id="37T-J9-nOi"/>
+                                    <action selector="imageButton:" destination="FCE-4c-dHV" eventType="touchUpInside" id="c7Q-bk-wqs"/>
                                 </connections>
-                            </imageView>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qz5-Ae-Imz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.88350212569999997" green="0.89402955770000003" blue="0.85911780599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m49-yp-Hk2" firstAttribute="top" secondItem="qz5-Ae-Imz" secondAttribute="top" constant="133" id="2Iv-2h-rIu"/>
+                            <constraint firstItem="m49-yp-Hk2" firstAttribute="centerX" secondItem="qz5-Ae-Imz" secondAttribute="centerX" id="KR5-kv-zeM"/>
+                            <constraint firstItem="m49-yp-Hk2" firstAttribute="width" secondItem="97A-cF-uxh" secondAttribute="width" multiplier="0.241546" id="pdw-D6-iLc"/>
+                            <constraint firstItem="qz5-Ae-Imz" firstAttribute="bottom" secondItem="m49-yp-Hk2" secondAttribute="bottom" constant="492" id="vIF-Pc-A3f"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nyI-8Q-2vT"/>
                     <connections>
-                        <outlet property="photoImageView" destination="KdE-Od-OSB" id="uyq-9R-Il0"/>
+                        <outlet property="buttonImage" destination="m49-yp-Hk2" id="WrF-0y-WXJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fm-hX-W5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -667,7 +676,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5748" y="-1231"/>
+            <point key="canvasLocation" x="5747.826086956522" y="-1231.4732142857142"/>
         </scene>
         <!--pickasong-->
         <scene sceneID="g84-Zz-EaY">
@@ -679,7 +688,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bIV-8u-cm7">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bIV-8u-cm7" id="PI3-u6-OaW">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
