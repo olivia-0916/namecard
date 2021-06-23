@@ -39,6 +39,8 @@ class cardinfoViewController: UIViewController, createcardViewControllerDelegate
     @IBOutlet weak var lineinfo: UILabel!
     @IBOutlet weak var fbinfo: UILabel!
     @IBOutlet weak var imageinfo: UIImageView!
+    @IBOutlet weak var infoview: UIView!
+    
     
     var infonamecard: Mycard?
     var index: Int = 0
@@ -50,6 +52,7 @@ class cardinfoViewController: UIViewController, createcardViewControllerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        infoview.layer.cornerRadius = 25
         updateView()
     }
     

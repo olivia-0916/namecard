@@ -95,6 +95,7 @@ class mycardViewController: UIViewController,
     
     func updateCard(namecard: Mycard, at index: Int) {
         mynamecards[index] = namecard
+        mynamecards.append(namecard.self)
         mytableview.reloadData()
     }
 }
