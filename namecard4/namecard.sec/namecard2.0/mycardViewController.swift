@@ -11,7 +11,8 @@ import UIKit
 class mycardViewController: UIViewController,
                             UITableViewDelegate,
                             UITableViewDataSource,
-                            cardinfoViewControllerDelegate {
+                            cardinfoViewControllerDelegate,
+                            createcardViewControllerDelegate {
     var mynamecards : [Mycard] = []
     
     @IBOutlet weak var mytableview: UITableView!
@@ -19,8 +20,6 @@ class mycardViewController: UIViewController,
     @IBAction func newcard(_ sender: Any) {
         performSegue(withIdentifier: "gotocreatecard", sender: self)
     }
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,13 +50,13 @@ class mycardViewController: UIViewController,
         mycell?.myjob.text = mynamecard.title
         mycell?.mycompany.text = mynamecard.company
         
-        mycell?.myimageview?.image = UIImage(named: (mynamecard.image)!)
-       // mycell?.myemail.text = mynamecard.email
+        if let imageName = mynamecard.image, let image =  UIImage(named: imageName) {
+            mycell?.myimageview?.image = image
+        }
+
         mycell?.mymobile.text = mynamecard.mobile
-//        mycell?.myaddress.text = mynamecard.address
         
         return mycell!
-        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -75,12 +74,10 @@ class mycardViewController: UIViewController,
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
         switch segue.identifier {
         case "gotocaardinfo":
-            if  let index = sender as? Int,
-                let cardinfoViewController = segue.destination as?
+            if let index = sender as? Int,
+               let cardinfoViewController = segue.destination as?
             cardinfoViewController {
                 cardinfoViewController.delegate = self
                 
@@ -88,6 +85,11 @@ class mycardViewController: UIViewController,
                 cardinfoViewController.index = index
                 cardinfoViewController.infonamecard = namecard
             }
+        case "gotocreatecard":
+            if let createCardPage = segue.destination as? createcardViewController {
+                createCardPage.delegate = self
+            }
+            
         default:
             break
         }
@@ -95,7 +97,13 @@ class mycardViewController: UIViewController,
     
     func updateCard(namecard: Mycard, at index: Int) {
         mynamecards[index] = namecard
-        mynamecards.append(namecard.self)
+        //mynamecards.append(namecard.self)
+        mytableview.reloadData()
+    }
+    
+    // 新增卡片
+    func updateMyCard(card: Mycard) {
+        mynamecards.append(card)
         mytableview.reloadData()
     }
 }

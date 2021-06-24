@@ -22,21 +22,16 @@ class createcardViewController: UIViewController{
     @IBOutlet weak var imagebutton: UIButton!
     
     @IBAction func donebutton(_ sender: Any) {
+        if namecard == nil {
+            namecard = Mycard(name: createname.text!, title: createtitle.text!, company: createcompany.text!, email: createemail.text!, address: createaddress.text!, mobile: createmobile.text!, image: nil)
+        }
+        
         namecard?.name = createname.text!
         namecard?.company = createcompany.text!
         namecard?.title = createtitle.text!
         namecard?.address = createaddress.text!
         namecard?.email = createemail.text!
         namecard?.mobile = createmobile.text!
-        
-        
-//        createcompany.text = namecard?.company
-//        createtitle.text = namecard?.title
-//        createmobile.text = namecard?.mobile
-//        createemail.text = namecard?.email
-//        createaddress.text = namecard?.address
-//        createline.text = namecard?.email
-//        createfb.text = namecard?.name
         
         delegate?.updateMyCard(card: namecard!)
         navigationController?.popViewController(animated: true)
