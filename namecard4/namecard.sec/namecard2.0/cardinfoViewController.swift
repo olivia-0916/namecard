@@ -11,7 +11,7 @@ protocol cardinfoViewControllerDelegate {
     func updateCard(namecard: Mycard, at index: Int)
 }
 
-class cardinfoViewController: UIViewController, createcardViewControllerDelegate {
+class cardinfoViewController: UIViewController, createcardViewControllerDelegate{
     
     var delegate: cardinfoViewControllerDelegate?
     var namelableinfo: String?
@@ -70,6 +70,7 @@ class cardinfoViewController: UIViewController, createcardViewControllerDelegate
         addressinfo.text = infonamecard?.address
         lineinfo.text = infonamecard?.email
         fbinfo.text = infonamecard?.name
+    
         if let imageName = infonamecard?.image {
             imageinfo.image = UIImage(named: imageName)
         }

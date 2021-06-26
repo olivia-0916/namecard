@@ -7,15 +7,21 @@
 
 import UIKit
 
-class changePhotoPageViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
+
+protocol changePhotoPageViewControllerDelegate {
+    func updatePhoto(cardimage: Mycard)
+}
+
+
+class changePhotoPageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+
+    var delegate: changePhotoPageViewController?
     
+    var imagelabelchange: Mycard?
+
+
     @IBOutlet weak var changeButton: UIButton!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
     
     func libraryPicker(){
         let photoController = UIImagePickerController()
@@ -23,13 +29,13 @@ class changePhotoPageViewController: UIViewController,UIImagePickerControllerDel
         photoController.sourceType = .photoLibrary
         present(photoController, animated: true, completion: nil)
     }
+    
     func camera(){
         let cameraController = UIImagePickerController()
         cameraController.delegate = self
         cameraController.sourceType = .camera
         present(cameraController, animated: true, completion: nil)
     }
-   
     
     @IBAction func imageChange(_ sender: UIButton) {
         let controller = UIAlertController(title: "選擇相片", message: nil, preferredStyle: .actionSheet)
@@ -56,9 +62,26 @@ class changePhotoPageViewController: UIViewController,UIImagePickerControllerDel
         dismiss(animated: true, completion: nil)
     }
     
+    
+
+    
+    
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            if let changeimage = imagelabelchange?.image {
+                changeButton.setImage(UIImage(named: changeimage), for: .normal)
+    
+        }
+    
+    
     //暫存，不用
     //@IBAction func pickPhotoImageView(_ sender: UITapGestureRecognizer) {}
     
     
 
+}
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }
