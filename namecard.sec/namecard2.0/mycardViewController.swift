@@ -73,6 +73,8 @@ class mycardViewController: UIViewController,
         return [deleteAction]
     }
     
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "gotocaardinfo":

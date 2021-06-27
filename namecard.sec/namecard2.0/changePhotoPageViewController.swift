@@ -7,16 +7,11 @@
 
 import UIKit
 
+class changePhotoPageViewController: UIViewController,
+                                     UIImagePickerControllerDelegate,
+                                     UINavigationControllerDelegate{
 
-
-protocol changePhotoPageViewControllerDelegate {
-    func updatePhoto(cardimage: Mycard)
-}
-
-
-class changePhotoPageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-
-    var delegate: changePhotoPageViewController?
+    var delegate: changePhotoPageViewControllerDelegate?
     
     var imagelabelchange: Mycard?
 
@@ -61,8 +56,6 @@ class changePhotoPageViewController: UIViewController, UIImagePickerControllerDe
         changeButton.setImage(image, for: .normal)
         dismiss(animated: true, completion: nil)
     }
-    
-    
 
     
     
@@ -72,16 +65,40 @@ class changePhotoPageViewController: UIViewController, UIImagePickerControllerDe
                 changeButton.setImage(UIImage(named: changeimage), for: .normal)
     
         }
-    
-    
-    //暫存，不用
-    //@IBAction func pickPhotoImageView(_ sender: UITapGestureRecognizer) {}
-    
-    
-
+            changeButton.imageView?.contentMode = .scaleAspectFill
+            
 }
     
-    override func didReceiveMemoryWarning() {
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if let changeimage = imagelabelchange?.image {
+            changeButton.setImage(UIImage(named: changeimage), for: .normal)
+            changeButton.imageView?.contentMode = .scaleAspectFill
+            delegate?.updatePhoto(cardimage: imagelabelchange!)
+        navigationController?.popViewController(animated: true)
+        
+        
+    }
+    }
+    
+    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        delegate?.updateCard(namecard: infonamecard!, at: index)
+//    }
+    
+    
+    
+        override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 }
+
+protocol changePhotoPageViewControllerDelegate {
+    func updatePhoto(cardimage: Mycard)
+}
+
+//暫存，不用
+//@IBAction func pickPhotoImageView(_ sender: UITapGestureRecognizer) {}
